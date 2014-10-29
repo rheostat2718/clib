@@ -1,0 +1,8062 @@
+clear
+clc
+r2
+
+sys =
+ 
+  a = 
+        x1   x2   x3
+   x1    0    1    0
+   x2    0    0    1
+   x3   -6  -11   -6
+ 
+  b = 
+       u1
+   x1   0
+   x2   0
+   x3   1
+ 
+  c = 
+       x1  x2  x3
+   y1   1   2   1
+ 
+  d = 
+       u1
+   y1   0
+ 
+Continuous-time state-space model.
+
+diary off
+clc
+clear
+cl
+{Undefined function or variable 'cl'.
+} 
+r2
+
+sys =
+ 
+  a = 
+        x1   x2   x3
+   x1    0    1    0
+   x2    0    0    1
+   x3   -6  -11   -6
+ 
+  b = 
+       u1
+   x1   0
+   x2   0
+   x3   1
+ 
+  c = 
+       x1  x2  x3
+   y1   1   2   1
+ 
+  d = 
+       u1
+   y1   0
+ 
+Continuous-time state-space model.
+
+[Ac,Bc,Cc]=bccomp(A0,B0,C0,0)
+{Error using <a href="matlab:helpUtils.errorDocCallback('bccomp')" style="font-weight:bold">bccomp</a>
+Too many input arguments.
+} 
+[Ac,Bc,Cc]=bccomp(A0,B0,C0)
+
+Ac =
+
+     0     1     0
+     0     0     1
+    -6   -11    -6
+
+
+Bc =
+
+     0
+     0
+     1
+
+
+Cc =
+
+     1     2     1
+
+edit bccomp
+edit bocomp
+[Ao,Bo,Co]=bocomp(A0,B0,C0)
+{Undefined function or variable 'C'.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp>helperfun', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 23)" style="font-weight:bold">bocomp>helperfun</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',23,0)">line 23</a>)
+    [cm,cn]=size(C);
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 6)" style="font-weight:bold">bocomp</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',6,0)">line 6</a>)
+    Tc = helperfun(A,B);
+} 
+[Ao,Bo,Co]=bocomp(A0,B0,C0)
+{Error using <a href="matlab:helpUtils.errorDocCallback('bocomp>helperfun', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 29)" style="font-weight:bold">bocomp>helperfun</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',29,0)">line 29</a>)
+number of rows of A and B are not equal
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 6)" style="font-weight:bold">bocomp</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',6,0)">line 6</a>)
+    Tc = helperfun(A,B);
+} 
+C0
+
+C0 =
+
+     1     2     1
+
+size(C0)
+
+ans =
+
+     1     3
+
+size(C0)
+
+ans =
+
+     1     3
+
+[Ao,Bo,Co]=bocomp(A0,B0,C0)
+{Error using <a href="matlab:helpUtils.errorDocCallback('bocomp>helperfun', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 29)" style="font-weight:bold">bocomp>helperfun</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',29,0)">line 29</a>)
+number of rows of A and B are not equal
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 6)" style="font-weight:bold">bocomp</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',6,0)">line 6</a>)
+    Tc = helperfun(A,B);
+} 
+A0
+
+A0 =
+
+     0     1     0
+     0     0     1
+    -6   -11    -6
+
+C0
+
+C0 =
+
+     1     2     1
+
+size(A0)
+
+ans =
+
+     3     3
+
+size(C0)
+
+ans =
+
+     1     3
+
+bocomp
+{Error using <a href="matlab:helpUtils.errorDocCallback('bocomp', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 6)" style="font-weight:bold">bocomp</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',6,0)">line 6</a>)
+Not enough input arguments.
+} 
+
+[Ao,Bo,Co]=bocomp(A0,B0,C0)
+cn=1.000000  an=3.000000
+
+{Error using <a href="matlab:helpUtils.errorDocCallback('bocomp>helperfun', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 29)" style="font-weight:bold">bocomp>helperfun</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',29,0)">line 29</a>)
+number of rows of A and B are not equal
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 6)" style="font-weight:bold">bocomp</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',6,0)">line 6</a>)
+    Tc = helperfun(A,B);
+} 
+[Ao,Bo,Co]=bocomp(A0,B0,C0)
+cn=1  an=3
+
+{Error using <a href="matlab:helpUtils.errorDocCallback('bocomp>helperfun', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 29)" style="font-weight:bold">bocomp>helperfun</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',29,0)">line 29</a>)
+number of rows of A and B are not equal
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 6)" style="font-weight:bold">bocomp</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',6,0)">line 6</a>)
+    Tc = helperfun(A,B);
+} 
+[Ao,Bo,Co]=bocomp(A0,B0,C0)
+cn=1  an=3
+
+{Error using <a href="matlab:helpUtils.errorDocCallback('bocomp>helperfun', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 29)" style="font-weight:bold">bocomp>helperfun</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',29,0)">line 29</a>)
+number of rows of A and B are not equal
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 6)" style="font-weight:bold">bocomp</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',6,0)">line 6</a>)
+    Tc = helperfun(A,B);
+} 
+clc
+[Ao,Bo,Co]=bocomp(A0,B0,C0)
+cn=1  an=3
+
+{Error using <a href="matlab:helpUtils.errorDocCallback('bocomp>helperfun', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 29)" style="font-weight:bold">bocomp>helperfun</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',29,0)">line 29</a>)
+number of rows of A and B are not equal
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 6)" style="font-weight:bold">bocomp</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',6,0)">line 6</a>)
+    Tc = helperfun(A,B);
+} 
+[Ao,Bo,Co]=bocomp(A0,B0,C0)
+cn=3  an=3
+
+
+pleft =
+
+     []
+
+{Error using <a href="matlab:helpUtils.errorDocCallback('mpower')" style="font-weight:bold"> ^ </a>
+Inputs must be a scalar and a square matrix.
+To compute elementwise POWER, use POWER (.^) instead.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp>helperfun', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 50)" style="font-weight:bold">bocomp>helperfun</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',50,0)">line 50</a>)
+        pleft=[pleft;C^k*A];
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 6)" style="font-weight:bold">bocomp</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',6,0)">line 6</a>)
+    Tc = helperfun(A,C);
+} 
+
+
+[Ao,Bo,Co]=bocomp(A0,B0,C0)
+cn=3  an=3
+
+
+pleft =
+
+     []
+
+{Error using <a href="matlab:helpUtils.errorDocCallback('bocomp>helperfun', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 55)" style="font-weight:bold">bocomp>helperfun</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',55,0)">line 55</a>)
+unobserval system
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 6)" style="font-weight:bold">bocomp</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',6,0)">line 6</a>)
+    Tc = helperfun(A,C);
+} 
+A0=randn(4,4);
+B0=randn(4,2);
+C0=randn(2,4);
+[Ao,Bo,Co]=bocomp(A0,B0,C0)
+cn=4  an=4
+
+
+pleft =
+
+     []
+
+{Error using <a href="matlab:helpUtils.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Inner matrix dimensions must agree.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp>helperfun', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 58)" style="font-weight:bold">bocomp>helperfun</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',58,0)">line 58</a>)
+    To1=inv(pleft)*Co;
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 6)" style="font-weight:bold">bocomp</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',6,0)">line 6</a>)
+    Tc = helperfun(A,C);
+} 
+bocomp
+{Error using <a href="matlab:helpUtils.errorDocCallback('bocomp', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 6)" style="font-weight:bold">bocomp</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',6,0)">line 6</a>)
+Not enough input arguments.
+} 
+[Ao,Bo,Co]=bocomp(A0,B0,C0)
+cn=4  an=4
+
+
+pleft =
+
+     []
+
+
+pleft =
+
+    0.4889    0.7269    0.2939    0.8884
+    1.0347   -0.3034   -0.7873   -1.1471
+    1.6980   -0.6177    6.0620    0.3368
+    0.7892    0.6750    0.4437    0.4421
+
+
+Co =
+
+     0     0     1     0
+     0     0     0     1
+
+{Error using <a href="matlab:helpUtils.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Inner matrix dimensions must agree.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp>helperfun', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 59)" style="font-weight:bold">bocomp>helperfun</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',59,0)">line 59</a>)
+    To1=inv(pleft)*Co;
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 6)" style="font-weight:bold">bocomp</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',6,0)">line 6</a>)
+    Tc = helperfun(A,C);
+} 
+[Ao,Bo,Co]=bocomp(A0,B0,C0)
+cn=4  an=4
+
+
+pleft =
+
+     []
+
+
+pleft =
+
+    0.4889    0.7269    0.2939    0.8884
+    1.0347   -0.3034   -0.7873   -1.1471
+    1.6980   -0.6177    6.0620    0.3368
+    0.7892    0.6750    0.4437    0.4421
+
+
+Co =
+
+     0     0     1     0
+     0     0     0     1
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 6)" style="font-weight:bold">bocomp</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',6,0)">line 6</a>)
+    Tc = helperfun(A,C);
+
+{Output argument "Ao" (and maybe others) not assigned during call to
+"C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m>bocomp".
+} 
+[Ao,Bo,Co]=bocomp(A0,B0,C0)
+cn=4  an=4
+
+
+pleft =
+
+     []
+
+
+pleft =
+
+    0.4889    0.7269    0.2939    0.8884
+    1.0347   -0.3034   -0.7873   -1.1471
+    1.6980   -0.6177    6.0620    0.3368
+    0.7892    0.6750    0.4437    0.4421
+
+
+Co =
+
+     0     0     1     0
+     0     0     0     1
+
+
+Ao =
+
+    0.1464   -1.5791    0.3819    2.2238
+   -0.3321    4.8693    0.9167   -5.9074
+    0.0810    1.1324   -0.1786   -2.5672
+    0.1643   -3.4897    0.2246    4.4588
+
+
+Bo =
+
+    0.5377    0.3188    3.5784    0.7254
+    1.8339   -1.3077    2.7694   -0.0631
+   -2.2588   -0.4336   -1.3499    0.7147
+    0.8622    0.3426    3.0349   -0.2050
+
+
+Co =
+
+   -0.1241    0.6715
+    1.4897   -1.2075
+    1.4090    0.7172
+    1.4172    1.6302
+
+[To,Ao,Bo,Co]=bocomp(A0,B0,C0)
+cn=4  an=4
+
+
+pleft =
+
+     []
+
+
+pleft =
+
+    0.4889    0.7269    0.2939    0.8884
+    1.0347   -0.3034   -0.7873   -1.1471
+    1.6980   -0.6177    6.0620    0.3368
+    0.7892    0.6750    0.4437    0.4421
+
+
+Co =
+
+     0     0     1     0
+     0     0     0     1
+
+
+To =
+
+    0.1464   -1.5791    0.3819    2.2238
+   -0.3321    4.8693    0.9167   -5.9074
+    0.0810    1.1324   -0.1786   -2.5672
+    0.1643   -3.4897    0.2246    4.4588
+
+
+Ao =
+
+    0.5377    0.3188    3.5784    0.7254
+    1.8339   -1.3077    2.7694   -0.0631
+   -2.2588   -0.4336   -1.3499    0.7147
+    0.8622    0.3426    3.0349   -0.2050
+
+
+Bo =
+
+   -0.1241    0.6715
+    1.4897   -1.2075
+    1.4090    0.7172
+    1.4172    1.6302
+
+
+Co =
+
+    0.4889    0.7269    0.2939    0.8884
+    1.0347   -0.3034   -0.7873   -1.1471
+
+To
+
+To =
+
+    0.1464   -1.5791    0.3819    2.2238
+   -0.3321    4.8693    0.9167   -5.9074
+    0.0810    1.1324   -0.1786   -2.5672
+    0.1643   -3.4897    0.2246    4.4588
+
+inv(To)
+
+ans =
+
+    9.0162   -1.9590    1.1097   -6.4532
+    1.7781   -0.4332   -0.9348   -1.9989
+    0.4889    0.7269    0.2939    0.8884
+    1.0347   -0.3034   -0.7873   -1.1471
+
+inv(To)*A*To
+{Undefined function or variable 'A'.
+} 
+inv(To)*A0*To
+
+ans =
+
+   -0.0000   -0.0000    0.8560   -6.9910
+    0.0000    0.0000    1.1662   -0.0198
+    1.0000   -0.0000   -0.9249   -6.6357
+   -0.0000    1.0000    0.9401   -1.3999
+
+[To,Ao,Bo,Co]=bocomp(A0,B0,C0)
+cn=4  an=4
+
+
+pleft =
+
+     []
+
+
+pleft =
+
+    0.4889    0.7269    0.2939    0.8884
+    1.0347   -0.3034   -0.7873   -1.1471
+    1.6980   -0.6177    6.0620    0.3368
+    0.7892    0.6750    0.4437    0.4421
+
+
+Co =
+
+     0     0     1     0
+     0     0     0     1
+
+
+To =
+
+    0.1464   -1.5791    0.3819    2.2238
+   -0.3321    4.8693    0.9167   -5.9074
+    0.0810    1.1324   -0.1786   -2.5672
+    0.1643   -3.4897    0.2246    4.4588
+
+
+Ao =
+
+   -0.0000   -0.0000    0.8560   -6.9910
+    0.0000    0.0000    1.1662   -0.0198
+    1.0000   -0.0000   -0.9249   -6.6357
+   -0.0000    1.0000    0.9401   -1.3999
+
+
+Bo =
+
+   -0.1241    0.6715
+    1.4897   -1.2075
+    1.4090    0.7172
+    1.4172    1.6302
+
+
+Co =
+
+    0.4889    0.7269    0.2939    0.8884
+    1.0347   -0.3034   -0.7873   -1.1471
+
+
+
+[To,Ao,Bo,Co]=bocomp(A0,B0,C0)
+cn=4  an=4
+
+
+pleft =
+
+     []
+
+
+pleft =
+
+    0.4889    0.7269    0.2939    0.8884
+    1.0347   -0.3034   -0.7873   -1.1471
+    1.6980   -0.6177    6.0620    0.3368
+    0.7892    0.6750    0.4437    0.4421
+
+
+Co =
+
+     0     0     1     0
+     0     0     0     1
+
+
+To =
+
+    0.1464   -1.5791    0.3819    2.2238
+   -0.3321    4.8693    0.9167   -5.9074
+    0.0810    1.1324   -0.1786   -2.5672
+    0.1643   -3.4897    0.2246    4.4588
+
+
+Ao =
+
+   -0.0000   -0.0000    0.8560   -6.9910
+    0.0000    0.0000    1.1662   -0.0198
+    1.0000   -0.0000   -0.9249   -6.6357
+   -0.0000    1.0000    0.9401   -1.3999
+
+
+Bo =
+
+  -11.6194   -1.3045
+   -5.0160   -2.2121
+    2.6952    1.1097
+   -3.3154   -1.3735
+
+
+Co =
+
+    0.0000    0.0000    1.0000    0.0000
+   -0.0000   -0.0000    0.0000    1.0000
+
+[Ao,Bo,Co]=bocomp(A0,B0,C0)
+cn=4  an=4
+
+
+pleft =
+
+     []
+
+
+pleft =
+
+    0.4889    0.7269    0.2939    0.8884
+    1.0347   -0.3034   -0.7873   -1.1471
+    1.6980   -0.6177    6.0620    0.3368
+    0.7892    0.6750    0.4437    0.4421
+
+
+Co =
+
+     0     0     1     0
+     0     0     0     1
+
+
+Ao =
+
+   -0.0000   -0.0000    0.8560   -6.9910
+    0.0000    0.0000    1.1662   -0.0198
+    1.0000   -0.0000   -0.9249   -6.6357
+   -0.0000    1.0000    0.9401   -1.3999
+
+
+Bo =
+
+  -11.6194   -1.3045
+   -5.0160   -2.2121
+    2.6952    1.1097
+   -3.3154   -1.3735
+
+
+Co =
+
+    0.0000    0.0000    1.0000    0.0000
+   -0.0000   -0.0000    0.0000    1.0000
+
+r2
+
+sys =
+ 
+  a = 
+        x1   x2   x3
+   x1    0    1    0
+   x2    0    0    1
+   x3   -6  -11   -6
+ 
+  b = 
+       u1
+   x1   0
+   x2   0
+   x3   1
+ 
+  c = 
+       x1  x2  x3
+   y1   1   2   1
+ 
+  d = 
+       u1
+   y1   0
+ 
+Continuous-time state-space model.
+
+[Ao,Bo,Co]=bocomp(A0,B0,C0)
+cn=3  an=3
+
+
+pleft =
+
+     []
+
+
+pleft =
+
+     1     2     1
+    -6   -10    -4
+    24    38    14
+
+{Error using <a href="matlab:helpUtils.errorDocCallback('bocomp>helperfun', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 56)" style="font-weight:bold">bocomp>helperfun</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',56,0)">line 56</a>)
+unobserval system
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bocomp', 'C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m', 6)" style="font-weight:bold">bocomp</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\bocomp.m',6,0)">line 6</a>)
+    To = helperfun(A,C);
+} 
+
+
+clear
+clc
+A=rand(6,6);
+B=rand(6,2);
+C=rand(2,6);
+[Ao,Bo,Co]=bocomp(A,B,C)
+cn=6  an=6
+
+
+pleft =
+
+     []
+
+
+pleft =
+
+    0.3517    0.5853    0.9172    0.7572    0.3804    0.0759
+    0.8308    0.5497    0.2858    0.7537    0.5678    0.0540
+    1.1254    1.3972    1.5776    1.3019    1.5482    2.3493
+    1.3155    1.6990    1.4825    1.0073    1.7608    2.1006
+    3.4221    5.3597    5.3102    3.8605    4.5327    5.3734
+    3.3057    5.3617    5.2239    3.9093    4.7927    5.3951
+
+
+Co =
+
+     0     0     0     0     1     0
+     0     0     0     0     0     1
+
+
+Ao =
+
+   -0.0000   -0.0000    0.0000   -0.0000    0.1297    0.0154
+   -0.0000    0.0000    0.0000   -0.0000    0.6507   -0.1232
+    1.0000   -0.0000   -0.0000   -0.0000    2.6438   -0.8963
+    0.0000    1.0000   -0.0000   -0.0000    2.5198   -0.1488
+   -0.0000    0.0000    1.0000   -0.0000    0.3572    2.0166
+    0.0000    0.0000   -0.0000    1.0000    0.6905    1.4523
+
+
+Bo =
+
+   -0.2310    0.2583
+    0.1814    0.3701
+    1.1183    0.6220
+    1.3458    1.3287
+    1.4951    1.1723
+    1.1731    1.5852
+
+
+Co =
+
+    0.0000   -0.0000    0.0000   -0.0000    1.0000    0.0000
+   -0.0000    0.0000   -0.0000    0.0000   -0.0000    1.0000
+
+syso=ss(Ao,Bo,Co,0)
+
+syso =
+ 
+  a = 
+               x1          x2          x3          x4          x5          x6
+   x1  -7.586e-18  -4.508e-17   1.478e-16  -2.302e-16      0.1297     0.01544
+   x2  -4.603e-17   1.511e-17   3.167e-16  -6.566e-16      0.6507     -0.1232
+   x3           1  -8.338e-17  -7.153e-16  -7.734e-16       2.644     -0.8963
+   x4   3.013e-16           1  -1.183e-16  -8.683e-16        2.52     -0.1488
+   x5  -9.126e-16   5.255e-16           1  -3.956e-16      0.3572       2.017
+   x6   7.105e-16   5.472e-16  -4.269e-16           1      0.6905       1.452
+ 
+  b = 
+           u1      u2
+   x1  -0.231  0.2583
+   x2  0.1814  0.3701
+   x3   1.118   0.622
+   x4   1.346   1.329
+   x5   1.495   1.172
+   x6   1.173   1.585
+ 
+  c = 
+               x1          x2          x3          x4          x5          x6
+   y1   1.969e-17  -1.103e-16    5.87e-16  -7.861e-16           1    2.33e-15
+   y2  -2.406e-16   4.793e-16  -7.178e-16   8.021e-16  -2.314e-15           1
+ 
+  d = 
+       u1  u2
+   y1   0   0
+   y2   0   0
+ 
+Continuous-time state-space model.
+
+[Ac,Bc,Cc]=bccomp(A,B,C)
+
+Ac =
+
+    0.0000   -0.0000    1.0000    0.0000   -0.0000   -0.0000
+   -0.0000    0.0000   -0.0000    1.0000    0.0000    0.0000
+   -0.0000   -0.0000   -0.0000   -0.0000    1.0000   -0.0000
+    0.0000    0.0000    0.0000    0.0000    0.0000    1.0000
+   -0.3648   -0.4565    0.9823    1.2882    2.7222    3.9676
+   -0.4995   -0.5538   -0.6309   -1.0633    0.2432   -0.9128
+
+
+Bc =
+
+   -0.0000   -0.0000
+    0.0000   -0.0000
+    0.0000   -0.0000
+   -0.0000    0.0000
+    1.0000    0.0000
+    0.0000    1.0000
+
+
+Cc =
+
+   -0.3606   -0.3484   -0.3373   -0.6245    1.4951    1.1723
+    0.1329    0.4955    0.5029    1.2330    1.1731    1.5852
+
+sysc=ss(Ac,Bc,Cc,0)
+
+sysc =
+ 
+  a = 
+               x1          x2          x3          x4          x5          x6
+   x1   7.733e-16  -3.665e-17           1   2.445e-15  -3.192e-16   -4.38e-16
+   x2   -1.93e-16   5.157e-17  -2.343e-16           1   2.565e-16   4.986e-16
+   x3   -6.17e-15  -1.063e-14   -4.94e-15  -1.361e-14           1   -6.93e-16
+   x4   1.489e-15   3.091e-15   4.173e-15   7.199e-15   4.772e-15           1
+   x5     -0.3648     -0.4565      0.9823       1.288       2.722       3.968
+   x6     -0.4995     -0.5538     -0.6309      -1.063      0.2432     -0.9128
+ 
+  b = 
+               u1          u2
+   x1  -1.064e-15  -7.416e-18
+   x2   8.828e-17  -6.472e-16
+   x3   6.791e-15  -3.324e-16
+   x4  -3.788e-15   1.629e-15
+   x5           1   3.167e-14
+   x6   2.879e-15           1
+ 
+  c = 
+            x1       x2       x3       x4       x5       x6
+   y1  -0.3606  -0.3484  -0.3373  -0.6245    1.495    1.172
+   y2   0.1329   0.4955   0.5029    1.233    1.173    1.585
+ 
+  d = 
+       u1  u2
+   y1   0   0
+   y2   0   0
+ 
+Continuous-time state-space model.
+
+step(sys);hold
+{Undefined function or variable 'sys'.
+} 
+sys=ss(A,B,C,0)
+
+sys =
+ 
+  a = 
+            x1       x2       x3       x4       x5       x6
+   x1   0.2769   0.9502   0.1869    0.276   0.9597    0.506
+   x2  0.04617  0.03445   0.4898   0.6797   0.3404   0.6991
+   x3  0.09713   0.4387   0.4456   0.6551   0.5853   0.8909
+   x4   0.8235   0.3816   0.6463   0.1626   0.2238   0.9593
+   x5   0.6948   0.7655   0.7094    0.119   0.7513   0.5472
+   x6   0.3171   0.7952   0.7547   0.4984   0.2551   0.1386
+ 
+  b = 
+           u1      u2
+   x1  0.1493  0.9293
+   x2  0.2575    0.35
+   x3  0.8407  0.1966
+   x4  0.2543  0.2511
+   x5  0.8143   0.616
+   x6  0.2435  0.4733
+ 
+  c = 
+            x1       x2       x3       x4       x5       x6
+   y1   0.3517   0.5853   0.9172   0.7572   0.3804  0.07585
+   y2   0.8308   0.5497   0.2858   0.7537   0.5678  0.05395
+ 
+  d = 
+       u1  u2
+   y1   0   0
+   y2   0   0
+ 
+Continuous-time state-space model.
+
+step(sys)
+A
+
+A =
+
+    0.2769    0.9502    0.1869    0.2760    0.9597    0.5060
+    0.0462    0.0344    0.4898    0.6797    0.3404    0.6991
+    0.0971    0.4387    0.4456    0.6551    0.5853    0.8909
+    0.8235    0.3816    0.6463    0.1626    0.2238    0.9593
+    0.6948    0.7655    0.7094    0.1190    0.7513    0.5472
+    0.3171    0.7952    0.7547    0.4984    0.2551    0.1386
+
+eig(A)
+
+ans =
+
+   2.9860 + 0.0000i
+  -0.6024 + 0.0000i
+  -0.5507 + 0.1819i
+  -0.5507 - 0.1819i
+   0.1009 + 0.0000i
+   0.4264 + 0.0000i
+
+seig(A)
+
+ans =
+
+  -0.6024 + 0.0000i
+  -0.5507 + 0.1819i
+  -0.5507 - 0.1819i
+   0.1009 + 0.0000i
+   0.4264 + 0.0000i
+   2.9860 + 0.0000i
+
+seig2(A)
+
+ans =
+
+  -0.6024 + 0.0000i
+  -0.5507 - 0.1819i
+  -0.5507 + 0.1819i
+   0.1009 + 0.0000i
+   0.4264 + 0.0000i
+   2.9860 + 0.0000i
+
+A=A-4*eye(6)
+
+A =
+
+   -3.7231    0.9502    0.1869    0.2760    0.9597    0.5060
+    0.0462   -3.9656    0.4898    0.6797    0.3404    0.6991
+    0.0971    0.4387   -3.5544    0.6551    0.5853    0.8909
+    0.8235    0.3816    0.6463   -3.8374    0.2238    0.9593
+    0.6948    0.7655    0.7094    0.1190   -3.2487    0.5472
+    0.3171    0.7952    0.7547    0.4984    0.2551   -3.8614
+
+seig2(A)
+
+ans =
+
+  -4.6024 + 0.0000i
+  -4.5507 - 0.1819i
+  -4.5507 + 0.1819i
+  -3.8991 + 0.0000i
+  -3.5736 + 0.0000i
+  -1.0140 + 0.0000i
+
+msign(A)
+
+ans =
+
+    -1     0     0     0     0     0
+     0    -1     0     0     0     0
+     0     0    -1     0     0     0
+     0     0     0    -1     0     0
+     0     0     0     0    -1     0
+     0     0     0     0     0    -1
+
+A
+
+A =
+
+   -3.7231    0.9502    0.1869    0.2760    0.9597    0.5060
+    0.0462   -3.9656    0.4898    0.6797    0.3404    0.6991
+    0.0971    0.4387   -3.5544    0.6551    0.5853    0.8909
+    0.8235    0.3816    0.6463   -3.8374    0.2238    0.9593
+    0.6948    0.7655    0.7094    0.1190   -3.2487    0.5472
+    0.3171    0.7952    0.7547    0.4984    0.2551   -3.8614
+
+msign(A)
+
+ans =
+
+    -1     0     0     0     0     0
+     0    -1     0     0     0     0
+     0     0    -1     0     0     0
+     0     0     0    -1     0     0
+     0     0     0     0    -1     0
+     0     0     0     0     0    -1
+
+seig2(A)
+
+ans =
+
+  -4.6024 + 0.0000i
+  -4.5507 - 0.1819i
+  -4.5507 + 0.1819i
+  -3.8991 + 0.0000i
+  -3.5736 + 0.0000i
+  -1.0140 + 0.0000i
+
+A1=A+2*eye(6)
+
+A1 =
+
+   -1.7231    0.9502    0.1869    0.2760    0.9597    0.5060
+    0.0462   -1.9656    0.4898    0.6797    0.3404    0.6991
+    0.0971    0.4387   -1.5544    0.6551    0.5853    0.8909
+    0.8235    0.3816    0.6463   -1.8374    0.2238    0.9593
+    0.6948    0.7655    0.7094    0.1190   -1.2487    0.5472
+    0.3171    0.7952    0.7547    0.4984    0.2551   -1.8614
+
+msign(A1)
+
+ans =
+
+   -0.7486    0.3844    0.3938    0.2991    0.3487    0.4300
+    0.1879   -0.7126    0.2944    0.2236    0.2607    0.3215
+    0.2494    0.3815   -0.6092    0.2968    0.3460    0.4268
+    0.2522    0.3858    0.3952   -0.6999    0.3499    0.4315
+    0.2882    0.4407    0.4515    0.3429   -0.6002    0.4930
+    0.2166    0.3312    0.3393    0.2577    0.3004   -0.6295
+
+A1=A+7*eye(6)
+
+A1 =
+
+    3.2769    0.9502    0.1869    0.2760    0.9597    0.5060
+    0.0462    3.0344    0.4898    0.6797    0.3404    0.6991
+    0.0971    0.4387    3.4456    0.6551    0.5853    0.8909
+    0.8235    0.3816    0.6463    3.1626    0.2238    0.9593
+    0.6948    0.7655    0.7094    0.1190    3.7513    0.5472
+    0.3171    0.7952    0.7547    0.4984    0.2551    3.1386
+
+msign(A1)
+
+ans =
+
+     1     0     0     0     0     0
+     0     1     0     0     0     0
+     0     0     1     0     0     0
+     0     0     0     1     0     0
+     0     0     0     0     1     0
+     0     0     0     0     0     1
+
+seig2(A1)
+
+ans =
+
+   2.3976 + 0.0000i
+   2.4493 - 0.1819i
+   2.4493 + 0.1819i
+   3.1009 + 0.0000i
+   3.4264 + 0.0000i
+   5.9860 + 0.0000i
+
+A
+
+A =
+
+   -3.7231    0.9502    0.1869    0.2760    0.9597    0.5060
+    0.0462   -3.9656    0.4898    0.6797    0.3404    0.6991
+    0.0971    0.4387   -3.5544    0.6551    0.5853    0.8909
+    0.8235    0.3816    0.6463   -3.8374    0.2238    0.9593
+    0.6948    0.7655    0.7094    0.1190   -3.2487    0.5472
+    0.3171    0.7952    0.7547    0.4984    0.2551   -3.8614
+
+eig(A)
+
+ans =
+
+  -1.0140 + 0.0000i
+  -4.6024 + 0.0000i
+  -4.5507 + 0.1819i
+  -4.5507 - 0.1819i
+  -3.8991 + 0.0000i
+  -3.5736 + 0.0000i
+
+msign(A)
+
+ans =
+
+    -1     0     0     0     0     0
+     0    -1     0     0     0     0
+     0     0    -1     0     0     0
+     0     0     0    -1     0     0
+     0     0     0     0    -1     0
+     0     0     0     0     0    -1
+
+msign(A+3*eye(6))
+
+ans =
+
+   -0.7486    0.3844    0.3938    0.2991    0.3487    0.4300
+    0.1879   -0.7126    0.2944    0.2236    0.2607    0.3215
+    0.2494    0.3815   -0.6092    0.2968    0.3460    0.4268
+    0.2522    0.3858    0.3952   -0.6999    0.3499    0.4315
+    0.2882    0.4407    0.4515    0.3429   -0.6002    0.4930
+    0.2166    0.3312    0.3393    0.2577    0.3004   -0.6295
+
+[V,D]=msign(A+3*eye(6))
+{Error using <a href="matlab:helpUtils.errorDocCallback('msign')" style="font-weight:bold">msign</a>
+Too many output arguments.
+} 
+[V,D]=meig(sign(A+3*eye(6)) )
+{Undefined function 'meig' for input arguments of type 'double'.
+} 
+[V,D]=eig(msign(A+3*eye(6)) )
+
+V =
+
+   -0.9555    0.4223    0.2742   -0.3623    0.0859    0.2244
+    0.1027    0.3157   -0.4720   -0.5737    0.0828   -0.8748
+    0.1363    0.4191   -0.3097    0.5688    0.2857    0.2887
+    0.1378    0.4238   -0.4104   -0.2237   -0.5236   -0.0033
+    0.1575    0.4841    0.5198    0.4064   -0.6270    0.1129
+    0.1183    0.3638    0.4092    0.0299    0.4866    0.2973
+
+
+D =
+
+   -1.0000         0         0         0         0         0
+         0    1.0000         0         0         0         0
+         0         0   -1.0000         0         0         0
+         0         0         0   -1.0000         0         0
+         0         0         0         0   -1.0000         0
+         0         0         0         0         0   -1.0000
+
+[V,D]=eig(msign(A+3*eye(6)) )
+
+V =
+
+   -0.9555    0.4223    0.2742   -0.3623    0.0859    0.2244
+    0.1027    0.3157   -0.4720   -0.5737    0.0828   -0.8748
+    0.1363    0.4191   -0.3097    0.5688    0.2857    0.2887
+    0.1378    0.4238   -0.4104   -0.2237   -0.5236   -0.0033
+    0.1575    0.4841    0.5198    0.4064   -0.6270    0.1129
+    0.1183    0.3638    0.4092    0.0299    0.4866    0.2973
+
+
+D =
+
+   -1.0000         0         0         0         0         0
+         0    1.0000         0         0         0         0
+         0         0   -1.0000         0         0         0
+         0         0         0   -1.0000         0         0
+         0         0         0         0   -1.0000         0
+         0         0         0         0         0   -1.0000
+
+M=V(:,2)
+
+M =
+
+    0.4223
+    0.3157
+    0.4191
+    0.4238
+    0.4841
+    0.3638
+
+M=[M,V(:,[1,3,4,5,6])]
+
+M =
+
+    0.4223   -0.9555    0.2742   -0.3623    0.0859    0.2244
+    0.3157    0.1027   -0.4720   -0.5737    0.0828   -0.8748
+    0.4191    0.1363   -0.3097    0.5688    0.2857    0.2887
+    0.4238    0.1378   -0.4104   -0.2237   -0.5236   -0.0033
+    0.4841    0.1575    0.5198    0.4064   -0.6270    0.1129
+    0.3638    0.1183    0.4092    0.0299    0.4866    0.2973
+
+inv(M)*A*M
+
+ans =
+
+   -1.0140    0.0000    0.0000    0.0000    0.0000    0.0000
+    0.0000   -4.4974   -0.5349   -0.0469    0.6327    0.2532
+    0.0000   -0.0758   -4.4199   -0.0804   -0.2417   -0.4864
+    0.0000    0.6666    0.4044   -3.6713   -0.5944    0.0555
+   -0.0000    0.5808   -0.5329    0.0399   -4.4032   -0.2382
+   -0.0000   -0.6926   -0.1848   -0.4588    0.6506   -4.1847
+
+seig(A)
+
+ans =
+
+  -4.6024 + 0.0000i
+  -4.5507 + 0.1819i
+  -4.5507 - 0.1819i
+  -3.8991 + 0.0000i
+  -3.5736 + 0.0000i
+  -1.0140 + 0.0000i
+
+tr(msign(A))
+{Undefined function 'tr' for input arguments of type 'double'.
+} 
+tr(msign(A))
+{Undefined function 'tr' for input arguments of type 'double'.
+} 
+trace( msign(A))
+
+ans =
+
+    -6
+
+A=A+3*eye(6)
+
+A =
+
+   -0.7231    0.9502    0.1869    0.2760    0.9597    0.5060
+    0.0462   -0.9656    0.4898    0.6797    0.3404    0.6991
+    0.0971    0.4387   -0.5544    0.6551    0.5853    0.8909
+    0.8235    0.3816    0.6463   -0.8374    0.2238    0.9593
+    0.6948    0.7655    0.7094    0.1190   -0.2487    0.5472
+    0.3171    0.7952    0.7547    0.4984    0.2551   -0.8614
+
+eig(A)
+
+ans =
+
+   1.9860 + 0.0000i
+  -1.6024 + 0.0000i
+  -1.5507 + 0.1819i
+  -1.5507 - 0.1819i
+  -0.8991 + 0.0000i
+  -0.5736 + 0.0000i
+
+seig(A)
+
+ans =
+
+  -1.6024 + 0.0000i
+  -1.5507 + 0.1819i
+  -1.5507 - 0.1819i
+  -0.8991 + 0.0000i
+  -0.5736 + 0.0000i
+   1.9860 + 0.0000i
+
+msignp(A)
+
+W =
+
+    0.1257    0.1922    0.1969    0.1496    0.1743    0.2150
+    0.0940    0.1437    0.1472    0.1118    0.1304    0.1608
+    0.1247    0.1907    0.1954    0.1484    0.1730    0.2134
+    0.1261    0.1929    0.1976    0.1501    0.1749    0.2158
+    0.1441    0.2204    0.2257    0.1715    0.1999    0.2465
+    0.1083    0.1656    0.1696    0.1288    0.1502    0.1853
+
+
+ans =
+
+    0.1257    0.1922    0.1969    0.1496    0.1743    0.2150
+    0.0940    0.1437    0.1472    0.1118    0.1304    0.1608
+    0.1247    0.1907    0.1954    0.1484    0.1730    0.2134
+    0.1261    0.1929    0.1976    0.1501    0.1749    0.2158
+    0.1441    0.2204    0.2257    0.1715    0.1999    0.2465
+    0.1083    0.1656    0.1696    0.1288    0.1502    0.1853
+
+trace(msignp(A))
+
+W =
+
+    0.1257    0.1922    0.1969    0.1496    0.1743    0.2150
+    0.0940    0.1437    0.1472    0.1118    0.1304    0.1608
+    0.1247    0.1907    0.1954    0.1484    0.1730    0.2134
+    0.1261    0.1929    0.1976    0.1501    0.1749    0.2158
+    0.1441    0.2204    0.2257    0.1715    0.1999    0.2465
+    0.1083    0.1656    0.1696    0.1288    0.1502    0.1853
+
+
+ans =
+
+     1
+
+trace(msignn(A))
+
+W =
+
+   -0.8743    0.1922    0.1969    0.1496    0.1743    0.2150
+    0.0940   -0.8563    0.1472    0.1118    0.1304    0.1608
+    0.1247    0.1907   -0.8046    0.1484    0.1730    0.2134
+    0.1261    0.1929    0.1976   -0.8499    0.1749    0.2158
+    0.1441    0.2204    0.2257    0.1715   -0.8001    0.2465
+    0.1083    0.1656    0.1696    0.1288    0.1502   -0.8147
+
+
+ans =
+
+    -5
+
+seig(A)
+
+ans =
+
+  -1.6024 + 0.0000i
+  -1.5507 + 0.1819i
+  -1.5507 - 0.1819i
+  -0.8991 + 0.0000i
+  -0.5736 + 0.0000i
+   1.9860 + 0.0000i
+
+A=A+1*eye(6)
+
+A =
+
+    0.2769    0.9502    0.1869    0.2760    0.9597    0.5060
+    0.0462    0.0344    0.4898    0.6797    0.3404    0.6991
+    0.0971    0.4387    0.4456    0.6551    0.5853    0.8909
+    0.8235    0.3816    0.6463    0.1626    0.2238    0.9593
+    0.6948    0.7655    0.7094    0.1190    0.7513    0.5472
+    0.3171    0.7952    0.7547    0.4984    0.2551    0.1386
+
+seig(A)
+
+ans =
+
+  -0.6024 + 0.0000i
+  -0.5507 + 0.1819i
+  -0.5507 - 0.1819i
+   0.1009 + 0.0000i
+   0.4264 + 0.0000i
+   2.9860 + 0.0000i
+
+trace( msignp(A))
+
+W =
+
+    0.6307    0.6599   -0.5785    0.0206    0.3957   -0.0283
+   -0.0127    0.0166    0.3534    0.2822   -0.1430    0.3226
+   -0.2396   -0.1235    0.7201    0.1247    0.1981    0.2989
+    0.4914    0.4662   -0.2661    0.3847   -0.1838    0.2927
+    0.2282    0.3815   -0.0279   -0.2700    0.9013   -0.1180
+   -0.0802   -0.0271    0.4862    0.2684   -0.0770    0.3466
+
+
+ans =
+
+     3
+
+trace( msignn(A))
+
+W =
+
+    0.3693   -0.6599    0.5785   -0.0206   -0.3957    0.0283
+    0.0127    0.9834   -0.3534   -0.2822    0.1430   -0.3226
+    0.2396    0.1235    0.2799   -0.1247   -0.1981   -0.2989
+   -0.4914   -0.4662    0.2661    0.6153    0.1838   -0.2927
+   -0.2282   -0.3815    0.0279    0.2700    0.0987    0.1180
+    0.0802    0.0271   -0.4862   -0.2684    0.0770    0.6534
+
+
+ans =
+
+     3
+
+edit r3
+r3
+r3
+
+vals =
+
+    1.0000
+   -1.0000
+   -1.0000
+   -1.0000
+    1.0000
+    1.0000
+
+r3
+
+M =
+
+    0.1045   -0.5255   -0.1869    0.7257   -0.5388    0.2092
+   -0.5500   -0.0180   -0.1364   -0.0146    0.3480    0.4496
+   -0.2189   -0.3409   -0.3636   -0.2757    0.3309    0.4951
+    0.6834    0.6992   -0.4184    0.5654    0.0445    0.4772
+    0.3839    0.3247    0.0727    0.2626   -0.5743    0.1800
+   -0.1556   -0.1142    0.7962   -0.0923    0.3839    0.4988
+
+r3
+
+M =
+
+    0.1045   -0.5255   -0.1869    0.7257   -0.5388    0.2092
+   -0.5500   -0.0180   -0.1364   -0.0146    0.3480    0.4496
+   -0.2189   -0.3409   -0.3636   -0.2757    0.3309    0.4951
+    0.6834    0.6992   -0.4184    0.5654    0.0445    0.4772
+    0.3839    0.3247    0.0727    0.2626   -0.5743    0.1800
+   -0.1556   -0.1142    0.7962   -0.0923    0.3839    0.4988
+
+
+Ad =
+
+   -0.5939   -0.5085   -0.0296    0.0000    0.0000    0.0000
+    0.0935   -0.4522    0.0230   -0.0000   -0.0000   -0.0000
+   -0.2941   -0.1928   -0.6578    0.0000    0.0000    0.0000
+   -0.0000   -0.0000   -0.0000   -0.0588   -0.0680   -0.4692
+    0.0000   -0.0000    0.0000   -0.5667    0.2410   -1.4442
+   -0.0000    0.0000    0.0000    1.1198    0.3724    3.3311
+
+r3
+
+M =
+
+    0.1045   -0.5255   -0.1869    0.7257   -0.5388    0.2092
+   -0.5500   -0.0180   -0.1364   -0.0146    0.3480    0.4496
+   -0.2189   -0.3409   -0.3636   -0.2757    0.3309    0.4951
+    0.6834    0.6992   -0.4184    0.5654    0.0445    0.4772
+    0.3839    0.3247    0.0727    0.2626   -0.5743    0.1800
+   -0.1556   -0.1142    0.7962   -0.0923    0.3839    0.4988
+
+
+Ad =
+
+   -0.5939   -0.5085   -0.0296    0.0000    0.0000    0.0000
+    0.0935   -0.4522    0.0230   -0.0000   -0.0000   -0.0000
+   -0.2941   -0.1928   -0.6578    0.0000    0.0000    0.0000
+   -0.0000   -0.0000   -0.0000   -0.0588   -0.0680   -0.4692
+    0.0000   -0.0000    0.0000   -0.5667    0.2410   -1.4442
+   -0.0000    0.0000    0.0000    1.1198    0.3724    3.3311
+
+r3
+
+M =
+
+    0.1045   -0.5255   -0.1869    0.7257   -0.5388    0.2092
+   -0.5500   -0.0180   -0.1364   -0.0146    0.3480    0.4496
+   -0.2189   -0.3409   -0.3636   -0.2757    0.3309    0.4951
+    0.6834    0.6992   -0.4184    0.5654    0.0445    0.4772
+    0.3839    0.3247    0.0727    0.2626   -0.5743    0.1800
+   -0.1556   -0.1142    0.7962   -0.0923    0.3839    0.4988
+
+
+Ad =
+
+   -0.5939   -0.5085   -0.0296    0.0000    0.0000    0.0000
+    0.0935   -0.4522    0.0230   -0.0000   -0.0000   -0.0000
+   -0.2941   -0.1928   -0.6578    0.0000    0.0000    0.0000
+   -0.0000   -0.0000   -0.0000   -0.0588   -0.0680   -0.4692
+    0.0000   -0.0000    0.0000   -0.5667    0.2410   -1.4442
+   -0.0000    0.0000    0.0000    1.1198    0.3724    3.3311
+
+r3
+
+M =
+
+    0.1045   -0.5255   -0.1869    0.7257   -0.5388    0.2092
+   -0.5500   -0.0180   -0.1364   -0.0146    0.3480    0.4496
+   -0.2189   -0.3409   -0.3636   -0.2757    0.3309    0.4951
+    0.6834    0.6992   -0.4184    0.5654    0.0445    0.4772
+    0.3839    0.3247    0.0727    0.2626   -0.5743    0.1800
+   -0.1556   -0.1142    0.7962   -0.0923    0.3839    0.4988
+
+
+Ad =
+
+   -0.5939   -0.5085   -0.0296    0.0000    0.0000    0.0000
+    0.0935   -0.4522    0.0230   -0.0000   -0.0000   -0.0000
+   -0.2941   -0.1928   -0.6578    0.0000    0.0000    0.0000
+   -0.0000   -0.0000   -0.0000   -0.0588   -0.0680   -0.4692
+    0.0000   -0.0000    0.0000   -0.5667    0.2410   -1.4442
+   -0.0000    0.0000    0.0000    1.1198    0.3724    3.3311
+
+
+Bd =
+
+    0.1996   -0.3351
+    0.0327   -0.1420
+   -0.2529    0.2631
+   -1.4026    0.3556
+   -1.3851   -0.8361
+    1.7681    1.1012
+
+
+Cd =
+
+    0.1658    0.1363   -0.7078    0.5149    0.1621    1.2585
+    0.4466    0.1613   -0.5653    1.0864   -0.4336    1.0513
+
+r3
+
+M =
+
+    0.1045   -0.5255   -0.1869    0.7257   -0.5388    0.2092
+   -0.5500   -0.0180   -0.1364   -0.0146    0.3480    0.4496
+   -0.2189   -0.3409   -0.3636   -0.2757    0.3309    0.4951
+    0.6834    0.6992   -0.4184    0.5654    0.0445    0.4772
+    0.3839    0.3247    0.0727    0.2626   -0.5743    0.1800
+   -0.1556   -0.1142    0.7962   -0.0923    0.3839    0.4988
+
+
+Ad =
+
+   -0.5939   -0.5085   -0.0296    0.0000    0.0000    0.0000
+    0.0935   -0.4522    0.0230   -0.0000   -0.0000   -0.0000
+   -0.2941   -0.1928   -0.6578    0.0000    0.0000    0.0000
+   -0.0000   -0.0000   -0.0000   -0.0588   -0.0680   -0.4692
+    0.0000   -0.0000    0.0000   -0.5667    0.2410   -1.4442
+   -0.0000    0.0000    0.0000    1.1198    0.3724    3.3311
+
+
+Bd =
+
+    0.1996   -0.3351
+    0.0327   -0.1420
+   -0.2529    0.2631
+   -1.4026    0.3556
+   -1.3851   -0.8361
+    1.7681    1.1012
+
+
+Cd =
+
+    0.1658    0.1363   -0.7078    0.5149    0.1621    1.2585
+    0.4466    0.1613   -0.5653    1.0864   -0.4336    1.0513
+
+{Subscript indices must either be real positive integers or logicals.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('r3', 'C:\Users\kaleb\Documents\MATLAB\control_library\r3.m', 16)" style="font-weight:bold">r3</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\r3.m',16,0)">line 16</a>)
+B1=Bd(:,end-2:end)
+} 
+r3
+
+M =
+
+    0.1045   -0.5255   -0.1869    0.7257   -0.5388    0.2092
+   -0.5500   -0.0180   -0.1364   -0.0146    0.3480    0.4496
+   -0.2189   -0.3409   -0.3636   -0.2757    0.3309    0.4951
+    0.6834    0.6992   -0.4184    0.5654    0.0445    0.4772
+    0.3839    0.3247    0.0727    0.2626   -0.5743    0.1800
+   -0.1556   -0.1142    0.7962   -0.0923    0.3839    0.4988
+
+
+Ad =
+
+   -0.5939   -0.5085   -0.0296    0.0000    0.0000    0.0000
+    0.0935   -0.4522    0.0230   -0.0000   -0.0000   -0.0000
+   -0.2941   -0.1928   -0.6578    0.0000    0.0000    0.0000
+   -0.0000   -0.0000   -0.0000   -0.0588   -0.0680   -0.4692
+    0.0000   -0.0000    0.0000   -0.5667    0.2410   -1.4442
+   -0.0000    0.0000    0.0000    1.1198    0.3724    3.3311
+
+
+Bd =
+
+    0.1996   -0.3351
+    0.0327   -0.1420
+   -0.2529    0.2631
+   -1.4026    0.3556
+   -1.3851   -0.8361
+    1.7681    1.1012
+
+
+Cd =
+
+    0.1658    0.1363   -0.7078    0.5149    0.1621    1.2585
+    0.4466    0.1613   -0.5653    1.0864   -0.4336    1.0513
+
+{Subscript indices must either be real positive integers or logicals.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('r3', 'C:\Users\kaleb\Documents\MATLAB\control_library\r3.m', 16)" style="font-weight:bold">r3</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\r3.m',16,0)">line 16</a>)
+B1=Bd(:,end-2:end)
+} 
+Bd
+
+Bd =
+
+    0.1996   -0.3351
+    0.0327   -0.1420
+   -0.2529    0.2631
+   -1.4026    0.3556
+   -1.3851   -0.8361
+    1.7681    1.1012
+
+Bd(:,end-2:end)
+{Subscript indices must either be real positive integers or logicals.
+} 
+Bd([1],end)
+
+ans =
+
+   -0.3351
+
+r3
+
+M =
+
+    0.1045   -0.5255   -0.1869    0.7257   -0.5388    0.2092
+   -0.5500   -0.0180   -0.1364   -0.0146    0.3480    0.4496
+   -0.2189   -0.3409   -0.3636   -0.2757    0.3309    0.4951
+    0.6834    0.6992   -0.4184    0.5654    0.0445    0.4772
+    0.3839    0.3247    0.0727    0.2626   -0.5743    0.1800
+   -0.1556   -0.1142    0.7962   -0.0923    0.3839    0.4988
+
+
+Ad =
+
+   -0.5939   -0.5085   -0.0296    0.0000    0.0000    0.0000
+    0.0935   -0.4522    0.0230   -0.0000   -0.0000   -0.0000
+   -0.2941   -0.1928   -0.6578    0.0000    0.0000    0.0000
+   -0.0000   -0.0000   -0.0000   -0.0588   -0.0680   -0.4692
+    0.0000   -0.0000    0.0000   -0.5667    0.2410   -1.4442
+   -0.0000    0.0000    0.0000    1.1198    0.3724    3.3311
+
+
+Bd =
+
+    0.1996   -0.3351
+    0.0327   -0.1420
+   -0.2529    0.2631
+   -1.4026    0.3556
+   -1.3851   -0.8361
+    1.7681    1.1012
+
+
+Cd =
+
+    0.1658    0.1363   -0.7078    0.5149    0.1621    1.2585
+    0.4466    0.1613   -0.5653    1.0864   -0.4336    1.0513
+
+
+B1 =
+
+   -1.4026    0.3556
+   -1.3851   -0.8361
+    1.7681    1.1012
+
+r3
+
+M =
+
+    0.1045   -0.5255   -0.1869    0.7257   -0.5388    0.2092
+   -0.5500   -0.0180   -0.1364   -0.0146    0.3480    0.4496
+   -0.2189   -0.3409   -0.3636   -0.2757    0.3309    0.4951
+    0.6834    0.6992   -0.4184    0.5654    0.0445    0.4772
+    0.3839    0.3247    0.0727    0.2626   -0.5743    0.1800
+   -0.1556   -0.1142    0.7962   -0.0923    0.3839    0.4988
+
+
+Ad =
+
+   -0.5939   -0.5085   -0.0296    0.0000    0.0000    0.0000
+    0.0935   -0.4522    0.0230   -0.0000   -0.0000   -0.0000
+   -0.2941   -0.1928   -0.6578    0.0000    0.0000    0.0000
+   -0.0000   -0.0000   -0.0000   -0.0588   -0.0680   -0.4692
+    0.0000   -0.0000    0.0000   -0.5667    0.2410   -1.4442
+   -0.0000    0.0000    0.0000    1.1198    0.3724    3.3311
+
+
+Bd =
+
+    0.1996   -0.3351
+    0.0327   -0.1420
+   -0.2529    0.2631
+   -1.4026    0.3556
+   -1.3851   -0.8361
+    1.7681    1.1012
+
+
+Cd =
+
+    0.1658    0.1363   -0.7078    0.5149    0.1621    1.2585
+    0.4466    0.1613   -0.5653    1.0864   -0.4336    1.0513
+
+
+B1 =
+
+   -1.4026    0.3556
+   -1.3851   -0.8361
+    1.7681    1.1012
+
+
+C1 =
+
+    0.5149    0.1621    1.2585
+    1.0864   -0.4336    1.0513
+
+r3
+
+M =
+
+    0.1045   -0.5255   -0.1869    0.7257   -0.5388    0.2092
+   -0.5500   -0.0180   -0.1364   -0.0146    0.3480    0.4496
+   -0.2189   -0.3409   -0.3636   -0.2757    0.3309    0.4951
+    0.6834    0.6992   -0.4184    0.5654    0.0445    0.4772
+    0.3839    0.3247    0.0727    0.2626   -0.5743    0.1800
+   -0.1556   -0.1142    0.7962   -0.0923    0.3839    0.4988
+
+
+Ad =
+
+   -0.5939   -0.5085   -0.0296    0.0000    0.0000    0.0000
+    0.0935   -0.4522    0.0230   -0.0000   -0.0000   -0.0000
+   -0.2941   -0.1928   -0.6578    0.0000    0.0000    0.0000
+   -0.0000   -0.0000   -0.0000   -0.0588   -0.0680   -0.4692
+    0.0000   -0.0000    0.0000   -0.5667    0.2410   -1.4442
+   -0.0000    0.0000    0.0000    1.1198    0.3724    3.3311
+
+
+Bd =
+
+    0.1996   -0.3351
+    0.0327   -0.1420
+   -0.2529    0.2631
+   -1.4026    0.3556
+   -1.3851   -0.8361
+    1.7681    1.1012
+
+
+Cd =
+
+    0.1658    0.1363   -0.7078    0.5149    0.1621    1.2585
+    0.4466    0.1613   -0.5653    1.0864   -0.4336    1.0513
+
+
+B1 =
+
+   -1.4026    0.3556
+   -1.3851   -0.8361
+    1.7681    1.1012
+
+
+C1 =
+
+    0.5149    0.1621    1.2585
+    1.0864   -0.4336    1.0513
+
+
+sys2
+
+sys2 =
+ 
+  a = 
+             x1        x2        x3
+   x1  -0.05879  -0.06799   -0.4692
+   x2   -0.5667     0.241    -1.444
+   x3      1.12    0.3724     3.331
+ 
+  b = 
+            u1       u2
+   x1   -1.403   0.3556
+   x2   -1.385  -0.8361
+   x3    1.768    1.101
+ 
+  c = 
+            x1       x2       x3
+   y1   0.5149   0.1621    1.258
+   y2    1.086  -0.4336    1.051
+ 
+  d = 
+       u1  u2
+   y1   0   0
+   y2   0   0
+ 
+Continuous-time state-space model.
+
+step(sys2)
+r3
+
+sys =
+ 
+  a = 
+            x1       x2       x3       x4       x5       x6
+   x1   0.2769   0.9502   0.1869    0.276   0.9597    0.506
+   x2  0.04617  0.03445   0.4898   0.6797   0.3404   0.6991
+   x3  0.09713   0.4387   0.4456   0.6551   0.5853   0.8909
+   x4   0.8235   0.3816   0.6463   0.1626   0.2238   0.9593
+   x5   0.6948   0.7655   0.7094    0.119   0.7513   0.5472
+   x6   0.3171   0.7952   0.7547   0.4984   0.2551   0.1386
+ 
+  b = 
+           u1      u2
+   x1  0.1493  0.9293
+   x2  0.2575    0.35
+   x3  0.8407  0.1966
+   x4  0.2543  0.2511
+   x5  0.8143   0.616
+   x6  0.2435  0.4733
+ 
+  c = 
+            x1       x2       x3       x4       x5       x6
+   y1   0.3517   0.5853   0.9172   0.7572   0.3804  0.07585
+   y2   0.8308   0.5497   0.2858   0.7537   0.5678  0.05395
+ 
+  d = 
+       u1  u2
+   y1   0   0
+   y2   0   0
+ 
+Continuous-time state-space model.
+
+
+M =
+
+    0.1045   -0.5255   -0.1869    0.7257   -0.5388    0.2092
+   -0.5500   -0.0180   -0.1364   -0.0146    0.3480    0.4496
+   -0.2189   -0.3409   -0.3636   -0.2757    0.3309    0.4951
+    0.6834    0.6992   -0.4184    0.5654    0.0445    0.4772
+    0.3839    0.3247    0.0727    0.2626   -0.5743    0.1800
+   -0.1556   -0.1142    0.7962   -0.0923    0.3839    0.4988
+
+
+Ad =
+
+   -0.5939   -0.5085   -0.0296    0.0000    0.0000    0.0000
+    0.0935   -0.4522    0.0230   -0.0000   -0.0000   -0.0000
+   -0.2941   -0.1928   -0.6578    0.0000    0.0000    0.0000
+   -0.0000   -0.0000   -0.0000   -0.0588   -0.0680   -0.4692
+    0.0000   -0.0000    0.0000   -0.5667    0.2410   -1.4442
+   -0.0000    0.0000    0.0000    1.1198    0.3724    3.3311
+
+
+Bd =
+
+    0.1996   -0.3351
+    0.0327   -0.1420
+   -0.2529    0.2631
+   -1.4026    0.3556
+   -1.3851   -0.8361
+    1.7681    1.1012
+
+
+Cd =
+
+    0.1658    0.1363   -0.7078    0.5149    0.1621    1.2585
+    0.4466    0.1613   -0.5653    1.0864   -0.4336    1.0513
+
+
+B1 =
+
+   -1.4026    0.3556
+   -1.3851   -0.8361
+    1.7681    1.1012
+
+
+C1 =
+
+    0.5149    0.1621    1.2585
+    1.0864   -0.4336    1.0513
+
+step(sys);
+close all
+step(sys); hold; step(sys2)
+Current plot held
+t=0:1/50:5;
+u=ones(2,length(t));
+u
+
+u =
+
+  Columns 1 through 24
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 25 through 48
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 49 through 72
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 73 through 96
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 97 through 120
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 121 through 144
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 145 through 168
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 169 through 192
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 193 through 216
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 217 through 240
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 241 through 251
+
+     1     1     1     1     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1     1     1     1     1
+
+t
+
+t =
+
+  Columns 1 through 14
+
+         0    0.0200    0.0400    0.0600    0.0800    0.1000    0.1200    0.1400    0.1600    0.1800    0.2000    0.2200    0.2400    0.2600
+
+  Columns 15 through 28
+
+    0.2800    0.3000    0.3200    0.3400    0.3600    0.3800    0.4000    0.4200    0.4400    0.4600    0.4800    0.5000    0.5200    0.5400
+
+  Columns 29 through 42
+
+    0.5600    0.5800    0.6000    0.6200    0.6400    0.6600    0.6800    0.7000    0.7200    0.7400    0.7600    0.7800    0.8000    0.8200
+
+  Columns 43 through 56
+
+    0.8400    0.8600    0.8800    0.9000    0.9200    0.9400    0.9600    0.9800    1.0000    1.0200    1.0400    1.0600    1.0800    1.1000
+
+  Columns 57 through 70
+
+    1.1200    1.1400    1.1600    1.1800    1.2000    1.2200    1.2400    1.2600    1.2800    1.3000    1.3200    1.3400    1.3600    1.3800
+
+  Columns 71 through 84
+
+    1.4000    1.4200    1.4400    1.4600    1.4800    1.5000    1.5200    1.5400    1.5600    1.5800    1.6000    1.6200    1.6400    1.6600
+
+  Columns 85 through 98
+
+    1.6800    1.7000    1.7200    1.7400    1.7600    1.7800    1.8000    1.8200    1.8400    1.8600    1.8800    1.9000    1.9200    1.9400
+
+  Columns 99 through 112
+
+    1.9600    1.9800    2.0000    2.0200    2.0400    2.0600    2.0800    2.1000    2.1200    2.1400    2.1600    2.1800    2.2000    2.2200
+
+  Columns 113 through 126
+
+    2.2400    2.2600    2.2800    2.3000    2.3200    2.3400    2.3600    2.3800    2.4000    2.4200    2.4400    2.4600    2.4800    2.5000
+
+  Columns 127 through 140
+
+    2.5200    2.5400    2.5600    2.5800    2.6000    2.6200    2.6400    2.6600    2.6800    2.7000    2.7200    2.7400    2.7600    2.7800
+
+  Columns 141 through 154
+
+    2.8000    2.8200    2.8400    2.8600    2.8800    2.9000    2.9200    2.9400    2.9600    2.9800    3.0000    3.0200    3.0400    3.0600
+
+  Columns 155 through 168
+
+    3.0800    3.1000    3.1200    3.1400    3.1600    3.1800    3.2000    3.2200    3.2400    3.2600    3.2800    3.3000    3.3200    3.3400
+
+  Columns 169 through 182
+
+    3.3600    3.3800    3.4000    3.4200    3.4400    3.4600    3.4800    3.5000    3.5200    3.5400    3.5600    3.5800    3.6000    3.6200
+
+  Columns 183 through 196
+
+    3.6400    3.6600    3.6800    3.7000    3.7200    3.7400    3.7600    3.7800    3.8000    3.8200    3.8400    3.8600    3.8800    3.9000
+
+  Columns 197 through 210
+
+    3.9200    3.9400    3.9600    3.9800    4.0000    4.0200    4.0400    4.0600    4.0800    4.1000    4.1200    4.1400    4.1600    4.1800
+
+  Columns 211 through 224
+
+    4.2000    4.2200    4.2400    4.2600    4.2800    4.3000    4.3200    4.3400    4.3600    4.3800    4.4000    4.4200    4.4400    4.4600
+
+  Columns 225 through 238
+
+    4.4800    4.5000    4.5200    4.5400    4.5600    4.5800    4.6000    4.6200    4.6400    4.6600    4.6800    4.7000    4.7200    4.7400
+
+  Columns 239 through 251
+
+    4.7600    4.7800    4.8000    4.8200    4.8400    4.8600    4.8800    4.9000    4.9200    4.9400    4.9600    4.9800    5.0000
+
+lsim(sys2,u,t)
+u=ones(2,length(t));
+lsim(sys2,u,t)
+hold;
+Current plot held
+lsim(sys,u,t)
+
+
+edit fit
+
+
+edit myfitness
+para=ones(1,32)
+
+para =
+
+  Columns 1 through 11
+
+     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 12 through 22
+
+     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 23 through 32
+
+     1     1     1     1     1     1     1     1     1     1
+
+fminseach(@myfitness,para,optimset('TolX',1e-5))
+{Undefined function 'fminseach' for input arguments of type
+'function_handle'.
+} 
+fminsearch(@myfitness,para,optimset('TolX',1e-5))
+{Error using <a href="matlab:helpUtils.errorDocCallback('myfitness', 'C:\Users\kaleb\Documents\MATLAB\control_library\myfitness.m', 13)" style="font-weight:bold">myfitness</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\myfitness.m',13,0)">line 13</a>)
+Not enough input arguments.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2014a\toolbox\matlab\optimfun\fminsearch.m', 190)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2014a\toolbox\matlab\optimfun\fminsearch.m',190,0)">line 190</a>)
+fv(:,1) = funfcn(x,varargin{:});
+} 
+para0=ones(1,32);
+fminsearch(@myfitness,para0,optimset('TolX',1e-5))
+{Undefined function or variable 'c14'.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('myfitness', 'C:\Users\kaleb\Documents\MATLAB\control_library\myfitness.m', 47)" style="font-weight:bold">myfitness</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\myfitness.m',47,0)">line 47</a>)
+    C1=[c11,c12,c13,c14; c21 c22 c23 c24];
+
+Error in <a href="matlab:helpUtils.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2014a\toolbox\matlab\optimfun\fminsearch.m', 190)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2014a\toolbox\matlab\optimfun\fminsearch.m',190,0)">line 190</a>)
+fv(:,1) = funfcn(x,varargin{:});
+} 
+fminsearch(@myfitness,para0,optimset('TolX',1e-5))
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+res =
+
+     0
+
+
+ans =
+
+  Columns 1 through 11
+
+     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 12 through 22
+
+     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 23 through 32
+
+     1     1     1     1     1     1     1     1     1     1
+
+[p1,fval,ef]=fminsearch(@myfitness,para0,optimset('TolX',1e-5))
+
+p1 =
+
+  Columns 1 through 11
+
+     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 12 through 22
+
+     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 23 through 32
+
+     1     1     1     1     1     1     1     1     1     1
+
+
+fval =
+
+     0
+
+
+ef =
+
+     1
+
+[p1,fval,ef]=fminsearch(@myfitness,para0,optimset('TolX',1e-5))
+
+p1 =
+
+  Columns 1 through 24
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 25 through 32
+
+     1     1     1     1     1     1     1     1
+
+
+fval =
+
+     0
+
+
+ef =
+
+     1
+
+p1
+
+p1 =
+
+  Columns 1 through 24
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 25 through 32
+
+     1     1     1     1     1     1     1     1
+
+myfitness(para0)
+
+ans =
+
+     0
+
+myfitness(para0)
+
+ans =
+
+   8.0493e+35
+
+[p1,fval,ef]=fminsearch(@myfitness,para0,optimset('TolX',1e-5))
+ 
+Exiting: Maximum number of function evaluations has been exceeded
+         - increase MaxFunEvals option.
+         Current function value: 19.292370 
+
+
+p1 =
+
+  Columns 1 through 14
+
+  -11.4057    3.7969    4.2217   -8.6087   16.1261  -14.1940    3.7664    4.0361  -11.3565   -8.6568   -8.8515   -5.3158   -1.7115   -0.1908
+
+  Columns 15 through 28
+
+    8.1281   -5.9363   -8.4576    4.1531    7.9591  -19.7073    3.6009    4.8415    6.4773    4.1463    6.9990    9.2663   12.7038    0.4554
+
+  Columns 29 through 32
+
+    5.5347   10.9720    7.8446    2.9306
+
+
+fval =
+
+   19.2924
+
+
+ef =
+
+     0
+
+p1
+
+p1 =
+
+  Columns 1 through 14
+
+  -11.4057    3.7969    4.2217   -8.6087   16.1261  -14.1940    3.7664    4.0361  -11.3565   -8.6568   -8.8515   -5.3158   -1.7115   -0.1908
+
+  Columns 15 through 28
+
+    8.1281   -5.9363   -8.4576    4.1531    7.9591  -19.7073    3.6009    4.8415    6.4773    4.1463    6.9990    9.2663   12.7038    0.4554
+
+  Columns 29 through 32
+
+    5.5347   10.9720    7.8446    2.9306
+
+r4
+A2
+
+A2 =
+
+  -11.4057    3.7969    4.2217   -8.6087
+   16.1261  -14.1940    3.7664    4.0361
+  -11.3565   -8.6568   -8.8515   -5.3158
+   -1.7115   -0.1908    8.1281   -5.9363
+
+sys2
+
+sys2 =
+ 
+  a = 
+             x1        x2        x3
+   x1  -0.05879  -0.06799   -0.4692
+   x2   -0.5667     0.241    -1.444
+   x3      1.12    0.3724     3.331
+ 
+  b = 
+            u1       u2
+   x1   -1.403   0.3556
+   x2   -1.385  -0.8361
+   x3    1.768    1.101
+ 
+  c = 
+            x1       x2       x3
+   y1   0.5149   0.1621    1.258
+   y2    1.086  -0.4336    1.051
+ 
+  d = 
+       u1  u2
+   y1   0   0
+   y2   0   0
+ 
+Continuous-time state-space model.
+
+sys3=ss(A2,B2,C2,0)
+
+sys3 =
+ 
+  a = 
+            x1       x2       x3       x4
+   x1   -11.41    3.797    4.222   -8.609
+   x2    16.13   -14.19    3.766    4.036
+   x3   -11.36   -8.657   -8.851   -5.316
+   x4   -1.712  -0.1908    8.128   -5.936
+ 
+  b = 
+           u1      u2
+   x1  -8.458   4.153
+   x2   7.959  -19.71
+   x3   3.601   4.842
+   x4   6.477   4.146
+ 
+  c = 
+           x1      x2      x3      x4
+   y1   6.999   9.266    12.7  0.4554
+   y2   5.535   10.97   7.845   2.931
+ 
+  d = 
+       u1  u2
+   y1   0   0
+   y2   0   0
+ 
+Continuous-time state-space model.
+
+step(sys3)
+hold;
+Current plot held
+A0=[[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; [-0.202, -1.15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]; [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]; [0, 0, -2.36, -13.6, -12.8, 0, 0, 0, 0, 0, 0, 0]; [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]; [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]; [0, 0, 0, 0, 0, -1.62, -9.4, -9.15, 0, 0, 0, 0]; [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]; [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]; [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]; [0, 0, 0, 0, 0, 0, 0, 0, -188., -111.6, -116.4, -20.8]];
+  B0=[[0, 0]; [1.0439, 4.1486]; [0, 0]; [0, 0]; [-1.794, 2.6775]; [0, 0]; [0, 0]; [1.0439, 4.1486]; [0, 0]; [0, 0]; [0, 0]; [-1.704, 2.6775]];
+  C0=[[0.264, 0.806, -1.42, -15, 0, 0, 0, 0, 0, 0, 0, 0]; [0, 0, 0, 0, 0, 4.9, 2.12, 1.95, 9.35, 25.8, 7.14, 0]];
+  
+    sys0 = ss(A0,B0,C0,0);
+    t=0:1/10:10;
+    z0=zeros(size(t));
+    z0=z0+1;
+    u=[z0;z0];
+    [y0,t,x0]=lsim(sys0,u,t);
+    
+    a11=p(1);
+{Undefined function 'p' for input arguments of type 'double'.
+} 
+A0=[[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; [-0.202, -1.15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]; [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]; [0, 0, -2.36, -13.6, -12.8, 0, 0, 0, 0, 0, 0, 0]; [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]; [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]; [0, 0, 0, 0, 0, -1.62, -9.4, -9.15, 0, 0, 0, 0]; [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]; [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]; [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]; [0, 0, 0, 0, 0, 0, 0, 0, -188., -111.6, -116.4, -20.8]];
+  B0=[[0, 0]; [1.0439, 4.1486]; [0, 0]; [0, 0]; [-1.794, 2.6775]; [0, 0]; [0, 0]; [1.0439, 4.1486]; [0, 0]; [0, 0]; [0, 0]; [-1.704, 2.6775]];
+  C0=[[0.264, 0.806, -1.42, -15, 0, 0, 0, 0, 0, 0, 0, 0]; [0, 0, 0, 0, 0, 4.9, 2.12, 1.95, 9.35, 25.8, 7.14, 0]];
+sys=ss(A0,B0,C0,0)
+
+sys =
+ 
+  a = 
+            x1      x2      x3      x4      x5      x6      x7      x8      x9     x10     x11     x12
+   x1        0       1       0       0       0       0       0       0       0       0       0       0
+   x2   -0.202   -1.15       0       0       0       0       0       0       0       0       0       0
+   x3        0       0       0       1       0       0       0       0       0       0       0       0
+   x4        0       0       0       0       1       0       0       0       0       0       0       0
+   x5        0       0   -2.36   -13.6   -12.8       0       0       0       0       0       0       0
+   x6        0       0       0       0       0       0       1       0       0       0       0       0
+   x7        0       0       0       0       0       0       0       1       0       0       0       0
+   x8        0       0       0       0       0   -1.62    -9.4   -9.15       0       0       0       0
+   x9        0       0       0       0       0       0       0       0       0       1       0       0
+   x10       0       0       0       0       0       0       0       0       0       0       1       0
+   x11       0       0       0       0       0       0       0       0       0       0       0       1
+   x12       0       0       0       0       0       0       0       0    -188  -111.6  -116.4   -20.8
+ 
+  b = 
+            u1      u2
+   x1        0       0
+   x2    1.044   4.149
+   x3        0       0
+   x4        0       0
+   x5   -1.794   2.678
+   x6        0       0
+   x7        0       0
+   x8    1.044   4.149
+   x9        0       0
+   x10       0       0
+   x11       0       0
+   x12  -1.704   2.678
+ 
+  c = 
+          x1     x2     x3     x4     x5     x6     x7     x8     x9    x10    x11    x12
+   y1  0.264  0.806  -1.42    -15      0      0      0      0      0      0      0      0
+   y2      0      0      0      0      0    4.9   2.12   1.95   9.35   25.8   7.14      0
+ 
+  d = 
+       u1  u2
+   y1   0   0
+   y2   0   0
+ 
+Continuous-time state-space model.
+
+step(sys)
+myfitness(p1)
+
+ans =
+
+   19.2924
+
+nyfitness(para0)
+{Undefined function 'nyfitness' for input arguments of type 'double'.
+} 
+myfitness( ones(1,32))
+
+ans =
+
+   8.0493e+35
+
+[p2,fval,ef]=fminsearch(@myfitness,p1,optimset('TolX',1e-6))
+ 
+Exiting: Maximum number of function evaluations has been exceeded
+         - increase MaxFunEvals option.
+         Current function value: 17.318501 
+
+
+p2 =
+
+  Columns 1 through 14
+
+  -12.5276    2.0239    4.4619   -8.6450   16.8381  -16.9165    0.0443    3.7836  -11.2532   -9.1726   -8.9223   -5.3164   -1.8966   -0.1452
+
+  Columns 15 through 28
+
+    9.0484   -5.7995   -5.7841   -4.2300   -0.5531   -9.3544    1.7649    7.5146    7.8980    7.6344    7.1948    7.6845   13.0385    0.3834
+
+  Columns 29 through 32
+
+    5.0498   10.4476    7.6295    2.9164
+
+
+fval =
+
+   17.3185
+
+
+ef =
+
+     0
+
+p0=p1;
+p1=p2;
+r4
+hold;
+Current plot held
+step(sys)
+[p2,fval,ef]=fminsearch(@myfitness,p1,optimset('TolX',1e-6))
+ 
+Exiting: Maximum number of function evaluations has been exceeded
+         - increase MaxFunEvals option.
+         Current function value: 17.085144 
+
+
+p2 =
+
+  Columns 1 through 14
+
+  -12.8959    3.1876    3.9912   -8.6654   16.1083  -17.3994    0.0573    3.9269  -11.1611   -9.2475   -9.1059   -5.3768   -1.8742   -0.3257
+
+  Columns 15 through 28
+
+    8.9658   -5.8939  -10.5440   -9.3530   -1.8631  -13.7092    6.6756   11.0786   12.5377   19.5736    7.2276    7.7174   13.0510    0.4482
+
+  Columns 29 through 32
+
+    5.0082   10.3046    7.3995    2.8649
+
+
+fval =
+
+   17.0851
+
+
+ef =
+
+     0
+
+p1=p2;
+close all
+r4
+hold;step(sys)
+Current plot held
+myfitness(p1)
+
+ans =
+
+   17.0851
+
+[p2,fval,ef]=fminsearch(@myfitness,p1,optimset('TolX',1e-6))
+ 
+Exiting: Maximum number of function evaluations has been exceeded
+         - increase MaxFunEvals option.
+         Current function value: 16.461580 
+
+
+p2 =
+
+  Columns 1 through 14
+
+  -13.9319    3.2271    2.0495   -8.4444   15.0233  -20.1450   -0.0142    3.5878  -11.1035   -9.1543   -9.4182   -5.2443   -2.2627   -1.8935
+
+  Columns 15 through 28
+
+    8.7533   -5.9504  -11.7023  -43.9788   49.7690  -77.8352   16.6027   24.0543   36.9686   51.3965    7.0613    7.2204   13.2656    0.4631
+
+  Columns 29 through 32
+
+    4.8768   10.6015    7.0966    2.8358
+
+
+fval =
+
+   16.4616
+
+
+ef =
+
+     0
+
+r4
+r4
+Current plot held
+myfitness(p2)
+
+ans =
+
+   16.4616
+
+r4
+Current plot held
+r4
+{Operation terminated by user during <a href="matlab:helpUtils.errorDocCallback('ltipack.ssdata', 'C:\Program Files\MATLAB\R2014a\toolbox\shared\controllib\engine\+ltipack\@ssdata\ssdata.m', 23)" style="font-weight:bold">ltipack.ssdata</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2014a\toolbox\shared\controllib\engine\+ltipack\@ssdata\ssdata.m',23,0)">line 23</a>)
+
+
+In <a href="matlab:helpUtils.errorDocCallback('ss', 'C:\Program Files\MATLAB\R2014a\toolbox\control\control\@ss\ss.m', 279)" style="font-weight:bold">ss</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2014a\toolbox\control\control\@ss\ss.m',279,0)">line 279</a>)
+            Data = ltipack.ssdata(a,b,c,d,[],Ts);
+
+In <a href="matlab:helpUtils.errorDocCallback('myfitness', 'C:\Users\kaleb\Documents\MATLAB\control_library\myfitness.m', 8)" style="font-weight:bold">myfitness</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\myfitness.m',8,0)">line 8</a>)
+    sys0 = ss(A0,B0,C0,0);
+
+In <a href="matlab:helpUtils.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2014a\toolbox\matlab\optimfun\fminsearch.m', 309)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2014a\toolbox\matlab\optimfun\fminsearch.m',309,0)">line 309</a>)
+    x(:) = xr; fxr = funfcn(x,varargin{:});
+
+In <a href="matlab:helpUtils.errorDocCallback('r4', 'C:\Users\kaleb\Documents\MATLAB\control_library\r4.m', 1)" style="font-weight:bold">r4</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\r4.m',1,0)">line 1</a>)
+ [p2,fval,ef]=fminsearch(@myfitness,p1,optimset('TolX',1e-9));
+} 
+
+p1
+
+p1 =
+
+  Columns 1 through 14
+
+  -13.9319    3.2271    2.0495   -8.4444   15.0233  -20.1450   -0.0142    3.5878  -11.1035   -9.1543   -9.4182   -5.2443   -2.2627   -1.8935
+
+  Columns 15 through 28
+
+    8.7533   -5.9504  -11.7023  -43.9788   49.7690  -77.8352   16.6027   24.0543   36.9686   51.3965    7.0613    7.2204   13.2656    0.4631
+
+  Columns 29 through 32
+
+    4.8768   10.6015    7.0966    2.8358
+
+
+
+p1=rand(1,32);
+r4
+{Error: <a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\myfitness.m',11,23)">File: myfitness.m Line: 11 Column: 23
+</a>Unbalanced or unexpected parenthesis or bracket.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2014a\toolbox\matlab\optimfun\fminsearch.m', 190)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2014a\toolbox\matlab\optimfun\fminsearch.m',190,0)">line 190</a>)
+fv(:,1) = funfcn(x,varargin{:});
+
+Error in <a href="matlab:helpUtils.errorDocCallback('r4', 'C:\Users\kaleb\Documents\MATLAB\control_library\r4.m', 1)" style="font-weight:bold">r4</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\r4.m',1,0)">line 1</a>)
+ [p2,fval,ef]=fminsearch(@myfitness,p1,optimset('TolX',1e-9));
+} 
+myfitness
+{Error using <a href="matlab:helpUtils.errorDocCallback('myfitness', 'C:\Users\kaleb\Documents\MATLAB\control_library\myfitness.m', 17)" style="font-weight:bold">myfitness</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\myfitness.m',17,0)">line 17</a>)
+Not enough input arguments.
+} 
+r4
+{Operation terminated by user during <a href="matlab:helpUtils.errorDocCallback('InputOutputModel', 'C:\Program Files\MATLAB\R2014a\toolbox\shared\controllib\engine\@InputOutputModel\InputOutputModel.m', 0)" style="font-weight:bold">InputOutputModel</a>
+
+
+In <a href="matlab:helpUtils.errorDocCallback('ltipack.ModelArray', 'C:\Program Files\MATLAB\R2014a\toolbox\shared\controllib\engine\+ltipack\ModelArray.m', 1)" style="font-weight:bold">ltipack.ModelArray</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2014a\toolbox\shared\controllib\engine\+ltipack\ModelArray.m',1,0)">line 1</a>)
+classdef (Hidden) ModelArray < InputOutputModel
+
+In <a href="matlab:helpUtils.errorDocCallback('ltipack.SystemArray', 'C:\Program Files\MATLAB\R2014a\toolbox\shared\controllib\engine\+ltipack\SystemArray.m', 1)" style="font-weight:bold">ltipack.SystemArray</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2014a\toolbox\shared\controllib\engine\+ltipack\SystemArray.m',1,0)">line 1</a>)
+classdef (Hidden) SystemArray < ltipack.ModelArray & DynamicSystem
+
+In <a href="matlab:helpUtils.errorDocCallback('lti', 'C:\Program Files\MATLAB\R2014a\toolbox\shared\controllib\engine\@lti\lti.m', 1)" style="font-weight:bold">lti</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2014a\toolbox\shared\controllib\engine\@lti\lti.m',1,0)">line 1</a>)
+classdef (SupportExtensionMethods=true) lti < ltipack.SingleRateSystem & ltipack.SystemArray
+
+In <a href="matlab:helpUtils.errorDocCallback('numlti', 'C:\Program Files\MATLAB\R2014a\toolbox\shared\controllib\engine\@numlti\numlti.m', 1)" style="font-weight:bold">numlti</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2014a\toolbox\shared\controllib\engine\@numlti\numlti.m',1,0)">line 1</a>)
+classdef (SupportExtensionMethods=true) numlti < lti
+
+In <a href="matlab:helpUtils.errorDocCallback('ss', 'C:\Program Files\MATLAB\R2014a\toolbox\control\control\@ss\ss.m', 173)" style="font-weight:bold">ss</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2014a\toolbox\control\control\@ss\ss.m',173,0)">line 173</a>)
+      function sys = ss(varargin)
+
+In <a href="matlab:helpUtils.errorDocCallback('myfitness', 'C:\Users\kaleb\Documents\MATLAB\control_library\myfitness.m', 8)" style="font-weight:bold">myfitness</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\myfitness.m',8,0)">line 8</a>)
+    sys0 = ss(A0,B0,C0,0);
+
+In <a href="matlab:helpUtils.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2014a\toolbox\matlab\optimfun\fminsearch.m', 309)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2014a\toolbox\matlab\optimfun\fminsearch.m',309,0)">line 309</a>)
+    x(:) = xr; fxr = funfcn(x,varargin{:});
+
+In <a href="matlab:helpUtils.errorDocCallback('r4', 'C:\Users\kaleb\Documents\MATLAB\control_library\r4.m', 1)" style="font-weight:bold">r4</a> (<a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\r4.m',1,0)">line 1</a>)
+ [p2,fval,ef]=fminsearch(@myfitness,p1,optimset('TolX',1e-9));
+} 
+p1=rand(1,32);
+p1=p1+0.5;
+p1=rand(1,32)*2-0.5;
+r4
+ 
+Exiting: Maximum number of function evaluations has been exceeded
+         - increase MaxFunEvals option.
+         Current function value: 7.877424 
+
+Current plot held
+ 
+
+diary off
+clc
+clear
+mygs([1 2 3;4 5 6 ; 7 8 9]
+ mygs([1 2 3;4 5 6 ; 7 8 9]
+                           |
+{Error: Expression or statement is incorrect--possibly unbalanced (, {, or [.
+} 
+mygs([1 2 3;4 5 6 ; 7 8 9])
+
+ans =
+
+    1.0000   -7.6011  -30.4764
+    4.0000  -33.4045  -94.3083
+    7.0000  -59.2080 -158.1403
+
+mygs([1 2 3;4 5 6 ; 7 8 9])
+
+ans =
+
+    1.0000   -0.1111   -0.1633
+    4.0000   -0.4883   -0.5053
+    7.0000   -0.8656   -0.8473
+
+mygs([1 2 3;4 5 6 ; 7 8 9])
+{Error: <a href="matlab: opentoline('C:\Users\kaleb\Documents\MATLAB\control_library\mygs.m',12,25)">File: mygs.m Line: 12 Column: 25
+</a>Unbalanced or unexpected parenthesis or bracket.
+} 
+mygs([1 2 3;4 5 6 ; 7 8 9])
+
+ans =
+
+    0.1231   -0.1111   -0.1633
+    0.4924   -0.4883   -0.5053
+    0.8616   -0.8656   -0.8473
+
+A=[1 2 3; 4 5 6;  7 8 9]
+
+A =
+
+     1     2     3
+     4     5     6
+     7     8     9
+
+[V,D]=eig(A)
+
+V =
+
+   -0.2320   -0.7858    0.4082
+   -0.5253   -0.0868   -0.8165
+   -0.8187    0.6123    0.4082
+
+
+D =
+
+   16.1168         0         0
+         0   -1.1168         0
+         0         0   -0.0000
+
+myadj(A)
+
+ans =
+
+   -3.0000   -6.0000   -3.0000
+   -6.0000  -12.0000   -6.0000
+   -3.0000   -6.0000   -3.0000
+
+V(:,3)
+
+ans =
+
+    0.4082
+   -0.8165
+    0.4082
+
+vals=diag(D)
+
+vals =
+
+   16.1168
+   -1.1168
+   -0.0000
+
+A-eye(length(A))*vals(1)
+
+ans =
+
+  -15.1168    2.0000    3.0000
+    4.0000  -11.1168    6.0000
+    7.0000    8.0000   -7.1168
+
+myadj(A-eye(length(A))*vals(1))
+
+ans =
+
+   31.1168  -38.2337   45.3505
+  -70.4674   86.5842 -102.7011
+  109.8179 -134.9348  160.0516
+
+ans(:,1)
+
+ans =
+
+   31.1168
+  -70.4674
+  109.8179
+
+ans/norm(ans)
+
+ans =
+
+    0.2320
+   -0.5253
+    0.8187
+
+u1=ans
+
+u1 =
+
+    0.2320
+   -0.5253
+    0.8187
+
+A*u1
+
+ans =
+
+    1.6373
+    3.2133
+    4.7893
+
+A*u1-vals(1)*u1
+
+ans =
+
+   -2.1013
+   11.6798
+   -8.4052
+
+A
+
+A =
+
+     1     2     3
+     4     5     6
+     7     8     9
+
+V(:,1)
+
+ans =
+
+   -0.2320
+   -0.5253
+   -0.8187
+
+vals
+
+vals =
+
+   16.1168
+   -1.1168
+   -0.0000
+
+V(:,1)
+
+ans =
+
+   -0.2320
+   -0.5253
+   -0.8187
+
+u1
+
+u1 =
+
+    0.2320
+   -0.5253
+    0.8187
+
+V
+
+V =
+
+   -0.2320   -0.7858    0.4082
+   -0.5253   -0.0868   -0.8165
+   -0.8187    0.6123    0.4082
+
+norm(V)
+
+ans =
+
+    1.1285
+
+sum(V.^2)
+
+ans =
+
+    1.0000    1.0000    1.0000
+
+V*V'
+
+ans =
+
+    0.8380   -0.1433   -0.1246
+   -0.1433    0.9502    0.0436
+   -0.1246    0.0436    1.2118
+
+V
+
+V =
+
+   -0.2320   -0.7858    0.4082
+   -0.5253   -0.0868   -0.8165
+   -0.8187    0.6123    0.4082
+
+inv(V)
+
+ans =
+
+   -0.4830   -0.5934   -0.7039
+   -0.9179   -0.2490    0.4199
+    0.4082   -0.8165    0.4082
+
+eig(V)
+
+ans =
+
+  -0.8569 + 0.0000i
+   0.4732 + 0.9479i
+   0.4732 - 0.9479i
+
+eig(D)
+
+ans =
+
+   -1.1168
+   -0.0000
+   16.1168
+
+eig(inv(V))
+
+ans =
+
+  -1.1669 + 0.0000i
+   0.4216 + 0.8445i
+   0.4216 - 0.8445i
+
+1./ans
+
+ans =
+
+  -0.8569 + 0.0000i
+   0.4732 - 0.9479i
+   0.4732 + 0.9479i
+
+eig(V)
+
+ans =
+
+  -0.8569 + 0.0000i
+   0.4732 + 0.9479i
+   0.4732 - 0.9479i
+
+myadj( V)
+
+ans =
+
+    0.4645   -0.5708    0.6770
+   -0.8829    0.2395    0.4039
+   -0.3927   -0.7854   -0.3927
+
+myadj( V)/det(V)
+
+ans =
+
+   -0.4830    0.5934   -0.7039
+    0.9179   -0.2490   -0.4199
+    0.4082    0.8165    0.4082
+
+inv(V)
+
+ans =
+
+   -0.4830   -0.5934   -0.7039
+   -0.9179   -0.2490    0.4199
+    0.4082   -0.8165    0.4082
+
+myadj(V)
+
+ans =
+
+    0.4645    0.5708    0.6770
+    0.8829    0.2395   -0.4039
+   -0.3927    0.7854   -0.3927
+
+myadj(V)/det(V)-inv(V)
+
+ans =
+
+   1.0e-15 *
+
+         0   -0.1110         0
+    0.1110         0    0.0555
+   -0.0555         0    0.0555
+
+clear
+clc
+A=[1 2 3 4; 5 6 7 8 ; 9 10 11 12; 13 14 15 16]
+
+A =
+
+     1     2     3     4
+     5     6     7     8
+     9    10    11    12
+    13    14    15    16
+
+myadj(A)
+
+ans =
+
+   1.0e-13 *
+
+    0.0355         0   -0.1066    0.1421
+   -0.1776   -0.1865    0.1066   -0.0355
+   -0.1776   -0.2132    0.0799   -0.0888
+    0.1776    0.2132   -0.1066    0.0799
+
+eig(A)
+
+ans =
+
+   36.2094
+   -2.2094
+   -0.0000
+   -0.0000
+
+A-eye(1)
+
+ans =
+
+     0     1     2     3
+     4     5     6     7
+     8     9    10    11
+    12    13    14    15
+
+det(ans)
+
+ans =
+
+     0
+
+A*A'
+
+ans =
+
+    30    70   110   150
+    70   174   278   382
+   110   278   446   614
+   150   382   614   846
+
+det(A*A')
+
+ans =
+
+  -1.5510e-24
+
+A*A'
+
+ans =
+
+    30    70   110   150
+    70   174   278   382
+   110   278   446   614
+   150   382   614   846
+
+det(ans)
+
+ans =
+
+  -1.5510e-24
+
+inv(A*A')
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.377988e-18.] 
+
+ans =
+
+   1.0e+14 *
+
+   -0.5278    0.8210   -0.0586   -0.2346
+    0.8210   -1.0555         0    0.3518
+   -0.0586         0    0.1759         0
+   -0.2346    0.3518         0   -0.1173
+
+
+A+A'
+
+ans =
+
+     2     7    12    17
+     7    12    17    22
+    12    17    22    27
+    17    22    27    32
+
+A-A'
+
+ans =
+
+     0    -3    -6    -9
+     3     0    -3    -6
+     6     3     0    -3
+     9     6     3     0
+
+det(ans)
+
+ans =
+
+     0
+
+help convmtx
+ <strong>convmtx</strong> Convolution matrix.
+    <strong>convmtx</strong>(C,N) returns the convolution matrix for vector C. If C is a
+    column vector and X is a column vector of length N, then <strong>convmtx</strong>(C,N)*X
+    is the same as CONV(C,X). If R is a row vector and X is a row vector of
+    length N, then X*<strong>convmtx</strong>(R,N) is the same as CONV(R,X).
+ 
+    % Example:
+    %   Generate a simple convolution matrix.
+ 
+    h = [1 2 3 2 1];
+    convmtx(h,7)        % Convolution matrix
+ 
+    See also <a href="matlab:help conv">conv</a>.
+
+    Overloaded methods:
+       <a href="matlab:help gf/convmtx">gf/convmtx</a>
+
+    Reference page in Help browser
+       <a href="matlab:doc signal/convmtx">doc signal/convmtx</a>
+
+h=[ 1 2 3]
+
+h =
+
+     1     2     3
+
+convmtx(h,4)
+
+ans =
+
+     1     2     3     0     0     0
+     0     1     2     3     0     0
+     0     0     1     2     3     0
+     0     0     0     1     2     3
+
+doc convmtx
+ans(1:3,1:3)+ans(:,4:end)
+{Error using <a href="matlab:helpUtils.errorDocCallback('plus')" style="font-weight:bold"> + </a>
+Matrix dimensions must agree.
+} 
+cm=convmtx([ 1 2 3],3)
+
+cm =
+
+     1     2     3     0     0
+     0     1     2     3     0
+     0     0     1     2     3
+
+cm(:,4:5)
+
+ans =
+
+     0     0
+     3     0
+     2     3
+
+[cm(:,4:5),zeros(3,1)]
+
+ans =
+
+     0     0     0
+     3     0     0
+     2     3     0
+
+[cm(:,4:5),zeros(3,1)]+cm(:,1:3)
+
+ans =
+
+     1     2     3
+     3     1     2
+     2     3     1
+
+cm=[cm(:,4:5),zeros(3,1)]+cm(:,1:3)
+
+cm =
+
+     1     2     3
+     3     1     2
+     2     3     1
+
+eig(cm)
+
+ans =
+
+   6.0000 + 0.0000i
+  -1.5000 + 0.8660i
+  -1.5000 - 0.8660i
+
+dct(eye(3))
+
+ans =
+
+    0.5774    0.5774    0.5774
+    0.7071         0   -0.7071
+    0.4082   -0.8165    0.4082
+
+m=dct(eye(3))
+
+m =
+
+    0.5774    0.5774    0.5774
+    0.7071         0   -0.7071
+    0.4082   -0.8165    0.4082
+
+inv(m)-m'
+
+ans =
+
+   1.0e-15 *
+
+   -0.2220   -0.1110   -0.1110
+   -0.2220    0.1665    0.1110
+   -0.2220    0.1110   -0.1110
+
+inv(m)*cm*m
+
+ans =
+
+    5.6631   -0.8728    1.2981
+   -1.1513   -1.3570    0.6799
+    1.0589   -1.0129   -1.3061
+
+[V,D]=eig(cm)
+
+V =
+
+  -0.5774 + 0.0000i   0.5774 + 0.0000i   0.5774 + 0.0000i
+  -0.5774 + 0.0000i  -0.2887 - 0.5000i  -0.2887 + 0.5000i
+  -0.5774 + 0.0000i  -0.2887 + 0.5000i  -0.2887 - 0.5000i
+
+
+D =
+
+   6.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i  -1.5000 + 0.8660i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i  -1.5000 - 0.8660i
+
+inv(V)*cm*V
+
+ans =
+
+   6.0000 - 0.0000i   0.0000 - 0.0000i   0.0000 + 0.0000i
+  -0.0000 + 0.0000i  -1.5000 + 0.8660i  -0.0000 + 0.0000i
+  -0.0000 - 0.0000i   0.0000 - 0.0000i  -1.5000 - 0.8660i
+
+V
+
+V =
+
+  -0.5774 + 0.0000i   0.5774 + 0.0000i   0.5774 + 0.0000i
+  -0.5774 + 0.0000i  -0.2887 - 0.5000i  -0.2887 + 0.5000i
+  -0.5774 + 0.0000i  -0.2887 + 0.5000i  -0.2887 - 0.5000i
+
+imag(V)
+
+ans =
+
+         0         0         0
+         0   -0.5000    0.5000
+         0    0.5000   -0.5000
+
+abs(imag(V)) < 1e-5
+
+ans =
+
+     1     1     1
+     1     0     0
+     1     0     0
+
+imag(V).*(abs(imag(V)) < 1e-5)
+
+ans =
+
+     0     0     0
+     0     0     0
+     0     0     0
+
+imag(V).*(abs(imag(V)) > 1e-5)
+
+ans =
+
+         0         0         0
+         0   -0.5000    0.5000
+         0    0.5000   -0.5000
+
+real(V)+imag(V).*(abs(imag(V)) > 1e-5)
+
+ans =
+
+   -0.5774    0.5774    0.5774
+   -0.5774   -0.7887    0.2113
+   -0.5774    0.2113   -0.7887
+
+0*real(V)+imag(V).*(abs(imag(V)) > 1e-5)
+
+ans =
+
+         0         0         0
+         0   -0.5000    0.5000
+         0    0.5000   -0.5000
+
+0*real(V)+imag(V).*(abs(imag(V)) > 1e-5)*i
+
+ans =
+
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 - 0.5000i   0.0000 + 0.5000i
+   0.0000 + 0.0000i   0.0000 + 0.5000i   0.0000 - 0.5000i
+
+real(V)+imag(V).*(abs(imag(V)) > 1e-5)*i
+
+ans =
+
+  -0.5774 + 0.0000i   0.5774 + 0.0000i   0.5774 + 0.0000i
+  -0.5774 + 0.0000i  -0.2887 - 0.5000i  -0.2887 + 0.5000i
+  -0.5774 + 0.0000i  -0.2887 + 0.5000i  -0.2887 - 0.5000i
+
+dct(V)
+
+ans =
+
+  -1.0000 + 0.0000i  -0.0000 + 0.0000i  -0.0000 - 0.0000i
+   0.0000 + 0.0000i   0.6124 - 0.3536i   0.6124 + 0.3536i
+   0.0000 + 0.0000i   0.3536 + 0.6124i   0.3536 - 0.6124i
+
+V
+
+V =
+
+  -0.5774 + 0.0000i   0.5774 + 0.0000i   0.5774 + 0.0000i
+  -0.5774 + 0.0000i  -0.2887 - 0.5000i  -0.2887 + 0.5000i
+  -0.5774 + 0.0000i  -0.2887 + 0.5000i  -0.2887 - 0.5000i
+
+V
+
+V =
+
+  -0.5774 + 0.0000i   0.5774 + 0.0000i   0.5774 + 0.0000i
+  -0.5774 + 0.0000i  -0.2887 - 0.5000i  -0.2887 + 0.5000i
+  -0.5774 + 0.0000i  -0.2887 + 0.5000i  -0.2887 - 0.5000i
+
+fct([ 0 1 0])
+{Undefined function 'fct' for input arguments of type 'double'.
+} 
+fft(eye(3))
+
+ans =
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i  -0.5000 - 0.8660i  -0.5000 + 0.8660i
+   1.0000 + 0.0000i  -0.5000 + 0.8660i  -0.5000 - 0.8660i
+
+edit
+r5
+{Undefined function or variable 'r5'.
+} 
+edit run5
+run5
+
+cm =
+
+     1     2     3     4     0     0     0
+     0     1     2     3     4     0     0
+     0     0     1     2     3     4     0
+     0     0     0     1     2     3     4
+
+run5
+cm
+
+cm =
+
+     1     2     3     4
+     4     1     2     3
+     3     4     1     2
+     2     3     4     1
+
+cm*[1 0 0 0]'
+
+ans =
+
+     1
+     4
+     3
+     2
+
+conv([1;4],[1 0 0 0 ]_
+ conv([1;4],[1 0 0 0 ]_
+                      |
+{Error: The input character is not valid in MATLAB statements or expressions.
+} 
+conv([1;4],[1 0 0 0 ])
+
+ans =
+
+     1     4     0     0     0
+
+conv(1:4,[1])
+
+ans =
+
+     1     2     3     4
+
+conv(1:4,[1 0])
+
+ans =
+
+     1     2     3     4     0
+
+conv(1:4,[1 0 0 0])
+
+ans =
+
+     1     2     3     4     0     0     0
+
+edit run0
+edit run6
+v=[1 2 3 4]
+
+v =
+
+     1     2     3     4
+
+flipud(v)
+
+ans =
+
+     1     2     3     4
+
+circshift( flipud(v(:)),1)
+
+ans =
+
+     1
+     4
+     3
+     2
+
+run6
+
+v =
+
+     1     2     3     4     5     6
+
+
+ans =
+
+     1     6     5     4     3     2
+     6     1     6     5     4     3
+     5     6     1     6     5     4
+     4     5     6     1     6     5
+     3     4     5     6     1     6
+     2     3     4     5     6     1
+
+run6
+
+v =
+
+     1     2     3     4     5     6
+
+
+cm =
+
+     1     6     5     4     3     2
+     6     1     6     5     4     3
+     5     6     1     6     5     4
+     4     5     6     1     6     5
+     3     4     5     6     1     6
+     2     3     4     5     6     1
+
+dctmtx(6)
+
+ans =
+
+    0.4082    0.4082    0.4082    0.4082    0.4082    0.4082
+    0.5577    0.4082    0.1494   -0.1494   -0.4082   -0.5577
+    0.5000    0.0000   -0.5000   -0.5000   -0.0000    0.5000
+    0.4082   -0.4082   -0.4082    0.4082    0.4082   -0.4082
+    0.2887   -0.5774    0.2887    0.2887   -0.5774    0.2887
+    0.1494   -0.4082    0.5577   -0.5577    0.4082   -0.1494
+
+m=dctmtx(6)
+
+m =
+
+    0.4082    0.4082    0.4082    0.4082    0.4082    0.4082
+    0.5577    0.4082    0.1494   -0.1494   -0.4082   -0.5577
+    0.5000    0.0000   -0.5000   -0.5000   -0.0000    0.5000
+    0.4082   -0.4082   -0.4082    0.4082    0.4082   -0.4082
+    0.2887   -0.5774    0.2887    0.2887   -0.5774    0.2887
+    0.1494   -0.4082    0.5577   -0.5577    0.4082   -0.1494
+
+inv(m)*cm*m
+
+ans =
+
+   22.5009   -5.5440    3.2000   -0.6499    1.8613    0.8050
+   -5.5440    2.3570   -1.7085    1.5943   -0.4142    0.4728
+    3.2000   -1.7085   -3.6699   -0.3908    0.4309    0.0641
+   -0.6499    1.5943   -0.3908   -4.6586   -0.0398    0.2142
+    1.8613   -0.4142    0.4309   -0.0398   -5.1854    0.1047
+    0.8050    0.4728    0.0641    0.2142    0.1047   -5.3440
+
+[V,D]=eig(cm)
+
+V =
+
+    0.1494    0.3131    0.4082    0.5223    0.5577   -0.3594
+   -0.4082   -0.5693   -0.4082    0.0552    0.4082   -0.4158
+    0.5577    0.2790   -0.4082   -0.4735    0.1494   -0.4449
+   -0.5577    0.2790    0.4082   -0.4735   -0.1494   -0.4449
+    0.4082   -0.5693    0.4082    0.0552   -0.4082   -0.4158
+   -0.1494    0.3131   -0.4082    0.5223   -0.5577   -0.3594
+
+
+D =
+
+   -5.4641         0         0         0         0         0
+         0   -5.3421         0         0         0         0
+         0         0   -5.0000         0         0         0
+         0         0         0   -4.2088         0         0
+         0         0         0         0    1.4641         0
+         0         0         0         0         0   24.5509
+
+V
+
+V =
+
+    0.1494    0.3131    0.4082    0.5223    0.5577   -0.3594
+   -0.4082   -0.5693   -0.4082    0.0552    0.4082   -0.4158
+    0.5577    0.2790   -0.4082   -0.4735    0.1494   -0.4449
+   -0.5577    0.2790    0.4082   -0.4735   -0.1494   -0.4449
+    0.4082   -0.5693    0.4082    0.0552   -0.4082   -0.4158
+   -0.1494    0.3131   -0.4082    0.5223   -0.5577   -0.3594
+
+cm
+
+cm =
+
+     1     6     5     4     3     2
+     6     1     6     5     4     3
+     5     6     1     6     5     4
+     4     5     6     1     6     5
+     3     4     5     6     1     6
+     2     3     4     5     6     1
+
+run6
+
+v =
+
+     1     2     3
+
+
+cm =
+
+     1     3     2
+     3     1     3
+     2     3     1
+
+inv(cm)
+
+ans =
+
+   -0.5333    0.2000    0.4667
+    0.2000   -0.2000    0.2000
+    0.4667    0.2000   -0.5333
+
+eig(cm)
+
+ans =
+
+   -2.3589
+   -1.0000
+    6.3589
+
+cm'
+
+ans =
+
+     1     3     2
+     3     1     3
+     2     3     1
+
+cm
+
+cm =
+
+     1     3     2
+     3     1     3
+     2     3     1
+
+cm-cm'
+
+ans =
+
+     0     0     0
+     0     0     0
+     0     0     0
+
+cjlear
+{Undefined function or variable 'cjlear'.
+} 
+clearclear
+{Undefined function or variable 'clearclear'.
+} 
+clear
+help flipud
+ <strong>flipud</strong> Flip array in up/down direction.
+    Y = <strong>flipud</strong>(X) returns X with the order of elements flipped upside down
+    along the first dimension.  For example,
+    
+    X = 1 4      becomes  3 6
+        2 5               2 5
+        3 6               1 4
+ 
+    See also <a href="matlab:help fliplr">fliplr</a>, <a href="matlab:help rot90">rot90</a>, <a href="matlab:help flip">flip</a>.
+
+    Overloaded methods:
+       <a href="matlab:help gpuArray/flipud">gpuArray/flipud</a>
+       <a href="matlab:help fints/flipud">fints/flipud</a>
+
+    Reference page in Help browser
+       <a href="matlab:doc flipud">doc flipud</a>
+
+doc flipud
+cv=[1:4]'
+
+cv =
+
+     1
+     2
+     3
+     4
+
+flipud(cv)
+
+ans =
+
+     4
+     3
+     2
+     1
+
+A=[1 2 3 4; 5 6 7 8 ; 9 10 11 12; 13 14 15 16]
+
+A =
+
+     1     2     3     4
+     5     6     7     8
+     9    10    11    12
+    13    14    15    16
+
+flipud(A)
+
+ans =
+
+    13    14    15    16
+     9    10    11    12
+     5     6     7     8
+     1     2     3     4
+
+doc circshift
+circshift(A,1)
+
+ans =
+
+    13    14    15    16
+     1     2     3     4
+     5     6     7     8
+     9    10    11    12
+
+circshift(A,2)
+
+ans =
+
+     9    10    11    12
+    13    14    15    16
+     1     2     3     4
+     5     6     7     8
+
+circshift(A,1)
+
+ans =
+
+    13    14    15    16
+     1     2     3     4
+     5     6     7     8
+     9    10    11    12
+
+A
+
+A =
+
+     1     2     3     4
+     5     6     7     8
+     9    10    11    12
+    13    14    15    16
+
+doc toeplitz
+toeplitz(1:4)
+
+ans =
+
+     1     2     3     4
+     2     1     2     3
+     3     2     1     2
+     4     3     2     1
+
+A(:)
+
+ans =
+
+     1
+     5
+     9
+    13
+     2
+     6
+    10
+    14
+     3
+     7
+    11
+    15
+     4
+     8
+    12
+    16
+
+clear
+clc
+h=1:4
+
+h =
+
+     1     2     3     4
+
+flipud(h(:),1)
+{Error using <a href="matlab:helpUtils.errorDocCallback('flipud')" style="font-weight:bold">flipud</a>
+Too many input arguments.
+} 
+flipud(h(:))
+
+ans =
+
+     4
+     3
+     2
+     1
+
+circshift(ans,1)
+
+ans =
+
+     1
+     4
+     3
+     2
+
+toeplitz(ans)
+
+ans =
+
+     1     4     3     2
+     4     1     4     3
+     3     4     1     4
+     2     3     4     1
+
+m=toeplitz(ans)
+
+m =
+
+  Columns 1 through 11
+
+     1     4     3     2     4     1     4     3     3     4     1
+     4     1     4     3     2     4     1     4     3     3     4
+     3     4     1     4     3     2     4     1     4     3     3
+     2     3     4     1     4     3     2     4     1     4     3
+     4     2     3     4     1     4     3     2     4     1     4
+     1     4     2     3     4     1     4     3     2     4     1
+     4     1     4     2     3     4     1     4     3     2     4
+     3     4     1     4     2     3     4     1     4     3     2
+     3     3     4     1     4     2     3     4     1     4     3
+     4     3     3     4     1     4     2     3     4     1     4
+     1     4     3     3     4     1     4     2     3     4     1
+     4     1     4     3     3     4     1     4     2     3     4
+     2     4     1     4     3     3     4     1     4     2     3
+     3     2     4     1     4     3     3     4     1     4     2
+     4     3     2     4     1     4     3     3     4     1     4
+     1     4     3     2     4     1     4     3     3     4     1
+
+  Columns 12 through 16
+
+     4     2     3     4     1
+     1     4     2     3     4
+     4     1     4     2     3
+     3     4     1     4     2
+     3     3     4     1     4
+     4     3     3     4     1
+     1     4     3     3     4
+     4     1     4     3     3
+     2     4     1     4     3
+     3     2     4     1     4
+     4     3     2     4     1
+     1     4     3     2     4
+     4     1     4     3     2
+     3     4     1     4     3
+     2     3     4     1     4
+     4     2     3     4     1
+
+run6
+
+v =
+
+     1     2     3
+
+
+cm =
+
+     1     3     2
+     3     1     3
+     2     3     1
+
+edit mysc
+mysc(5)
+
+ans =
+
+     1     5     4     3     2
+     5     1     5     4     3
+     4     5     1     5     4
+     3     4     5     1     5
+     2     3     4     5     1
+
+mysc(10)
+
+ans =
+
+     1    10     9     8     7     6     5     4     3     2
+    10     1    10     9     8     7     6     5     4     3
+     9    10     1    10     9     8     7     6     5     4
+     8     9    10     1    10     9     8     7     6     5
+     7     8     9    10     1    10     9     8     7     6
+     6     7     8     9    10     1    10     9     8     7
+     5     6     7     8     9    10     1    10     9     8
+     4     5     6     7     8     9    10     1    10     9
+     3     4     5     6     7     8     9    10     1    10
+     2     3     4     5     6     7     8     9    10     1
+
+A=mysc(6)
+
+A =
+
+     1     6     5     4     3     2
+     6     1     6     5     4     3
+     5     6     1     6     5     4
+     4     5     6     1     6     5
+     3     4     5     6     1     6
+     2     3     4     5     6     1
+
+dct(A)
+
+ans =
+
+    8.5732   10.2062   11.0227   11.0227   10.2062    8.5732
+    0.8165    0.5977    0.2188   -0.2188   -0.5977   -0.8165
+   -3.0000   -1.0000    1.0000    1.0000   -1.0000   -3.0000
+   -2.0412    2.0412    2.0412   -2.0412   -2.0412    2.0412
+   -1.7321    2.8868   -1.7321   -1.7321    2.8868   -1.7321
+   -0.8165    2.2307   -3.0472    3.0472   -2.2307    0.8165
+
+edit myfftmtx
+myfftmtx(4)
+
+ans =
+
+  Columns 1 through 3
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+
+  Columns 4 through 6
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   0.0000 - 1.0000i
+
+  Columns 7 through 9
+
+  -1.0000 + 0.0000i   0.0000 + 1.0000i   1.0000 + 0.0000i
+
+  Columns 10 through 12
+
+  -1.0000 + 0.0000i   1.0000 + 0.0000i  -1.0000 + 0.0000i
+
+  Columns 13 through 15
+
+   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i
+
+  Column 16
+
+   0.0000 - 1.0000i
+
+myfftmtx(4)
+
+ans =
+
+  Columns 1 through 3
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i
+
+  Column 4
+
+   1.0000 + 0.0000i
+   0.0000 - 1.0000i
+  -1.0000 + 0.0000i
+   0.0000 + 1.0000i
+
+myfftmtx(8)
+
+ans =
+
+  Columns 1 through 3
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.7071 + 0.7071i   0.0000 + 1.0000i
+   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i  -0.7071 + 0.7071i   0.0000 - 1.0000i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i  -0.7071 - 0.7071i   0.0000 + 1.0000i
+   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.7071 - 0.7071i   0.0000 - 1.0000i
+
+  Columns 4 through 6
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+  -0.7071 + 0.7071i  -1.0000 + 0.0000i  -0.7071 - 0.7071i
+   0.0000 - 1.0000i   1.0000 + 0.0000i   0.0000 + 1.0000i
+   0.7071 + 0.7071i  -1.0000 + 0.0000i   0.7071 - 0.7071i
+  -1.0000 + 0.0000i   1.0000 + 0.0000i  -1.0000 + 0.0000i
+   0.7071 - 0.7071i  -1.0000 + 0.0000i   0.7071 + 0.7071i
+   0.0000 + 1.0000i   1.0000 + 0.0000i   0.0000 - 1.0000i
+  -0.7071 - 0.7071i  -1.0000 + 0.0000i  -0.7071 + 0.7071i
+
+  Columns 7 through 8
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i
+   0.0000 - 1.0000i   0.7071 - 0.7071i
+  -1.0000 + 0.0000i   0.0000 - 1.0000i
+   0.0000 + 1.0000i  -0.7071 - 0.7071i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i
+   0.0000 - 1.0000i  -0.7071 + 0.7071i
+  -1.0000 + 0.0000i   0.0000 + 1.0000i
+   0.0000 + 1.0000i   0.7071 + 0.7071i
+
+A=myfftmtx(8)
+
+A =
+
+  Columns 1 through 3
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.7071 + 0.7071i   0.0000 + 1.0000i
+   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i  -0.7071 + 0.7071i   0.0000 - 1.0000i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i  -0.7071 - 0.7071i   0.0000 + 1.0000i
+   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.7071 - 0.7071i   0.0000 - 1.0000i
+
+  Columns 4 through 6
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+  -0.7071 + 0.7071i  -1.0000 + 0.0000i  -0.7071 - 0.7071i
+   0.0000 - 1.0000i   1.0000 + 0.0000i   0.0000 + 1.0000i
+   0.7071 + 0.7071i  -1.0000 + 0.0000i   0.7071 - 0.7071i
+  -1.0000 + 0.0000i   1.0000 + 0.0000i  -1.0000 + 0.0000i
+   0.7071 - 0.7071i  -1.0000 + 0.0000i   0.7071 + 0.7071i
+   0.0000 + 1.0000i   1.0000 + 0.0000i   0.0000 - 1.0000i
+  -0.7071 - 0.7071i  -1.0000 + 0.0000i  -0.7071 + 0.7071i
+
+  Columns 7 through 8
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i
+   0.0000 - 1.0000i   0.7071 - 0.7071i
+  -1.0000 + 0.0000i   0.0000 - 1.0000i
+   0.0000 + 1.0000i  -0.7071 - 0.7071i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i
+   0.0000 - 1.0000i  -0.7071 + 0.7071i
+  -1.0000 + 0.0000i   0.0000 + 1.0000i
+   0.0000 + 1.0000i   0.7071 + 0.7071i
+
+A*[1 1 1 1 0 0 0 0 ]'
+
+ans =
+
+   4.0000 + 0.0000i
+   1.0000 + 2.4142i
+   0.0000 + 0.0000i
+   1.0000 + 0.4142i
+   0.0000 + 0.0000i
+   1.0000 - 0.4142i
+   0.0000 + 0.0000i
+   1.0000 - 2.4142i
+
+fft([1 1 1 1 0 0 0 0])
+
+ans =
+
+  Columns 1 through 3
+
+   4.0000 + 0.0000i   1.0000 - 2.4142i   0.0000 + 0.0000i
+
+  Columns 4 through 6
+
+   1.0000 - 0.4142i   0.0000 + 0.0000i   1.0000 + 0.4142i
+
+  Columns 7 through 8
+
+   0.0000 + 0.0000i   1.0000 + 2.4142i
+
+fft([1 1 1 1 0 0 0 0]')
+
+ans =
+
+   4.0000 + 0.0000i
+   1.0000 - 2.4142i
+   0.0000 + 0.0000i
+   1.0000 - 0.4142i
+   0.0000 + 0.0000i
+   1.0000 + 0.4142i
+   0.0000 + 0.0000i
+   1.0000 + 2.4142i
+
+fft([1 1 1 1 0 0 0 0]') - A*[ 1 1 1 1 0 0 0 0]'
+
+ans =
+
+   0.0000 + 0.0000i
+   0.0000 - 4.8284i
+   0.0000 + 0.0000i
+   0.0000 - 0.8284i
+   0.0000 + 0.0000i
+   0.0000 + 0.8284i
+   0.0000 + 0.0000i
+   0.0000 + 4.8284i
+
+fft([1 1 1 1 0 0 0 0]') - A*[ 1 1 1 1 0 0 0 0]'
+
+ans =
+
+   0.0000 + 0.0000i
+   0.0000 - 4.8284i
+   0.0000 + 0.0000i
+   0.0000 - 0.8284i
+   0.0000 + 0.0000i
+   0.0000 + 0.8284i
+   0.0000 + 0.0000i
+   0.0000 + 4.8284i
+
+A*[1 0 0 0 0 0 0 0]'
+
+ans =
+
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+
+A*[0 1  0 0  0 0 0 0]
+{Error using <a href="matlab:helpUtils.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Inner matrix dimensions must agree.
+} 
+A*[0 1  0 0  0 0 0 0]'
+
+ans =
+
+   1.0000 + 0.0000i
+   0.7071 + 0.7071i
+   0.0000 + 1.0000i
+  -0.7071 + 0.7071i
+  -1.0000 + 0.0000i
+  -0.7071 - 0.7071i
+   0.0000 - 1.0000i
+   0.7071 - 0.7071i
+
+fft([ 0 1 0  0  0 0 0 0]).'
+
+ans =
+
+   1.0000 + 0.0000i
+   0.7071 - 0.7071i
+   0.0000 - 1.0000i
+  -0.7071 - 0.7071i
+  -1.0000 + 0.0000i
+  -0.7071 + 0.7071i
+   0.0000 + 1.0000i
+   0.7071 + 0.7071i
+
+
+
+fft([0 1 0 0]
+ fft([0 1 0 0]
+              |
+{Error: Expression or statement is incorrect--possibly unbalanced (,
+{, or [.
+} 
+fft([0 1 0 0])
+
+ans =
+
+  Columns 1 through 3
+
+   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i
+
+  Column 4
+
+   0.0000 + 1.0000i
+
+fft([0 1 0 0]).'
+
+ans =
+
+   1.0000 + 0.0000i
+   0.0000 - 1.0000i
+  -1.0000 + 0.0000i
+   0.0000 + 1.0000i
+
+myfftmtx(4)
+
+ans =
+
+  Columns 1 through 3
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i
+
+  Column 4
+
+   1.0000 + 0.0000i
+   0.0000 + 1.0000i
+  -1.0000 + 0.0000i
+   0.0000 - 1.0000i
+
+fft([0 1 0 0]).'
+
+ans =
+
+   1.0000 + 0.0000i
+   0.0000 - 1.0000i
+  -1.0000 + 0.0000i
+   0.0000 + 1.0000i
+
+A*[0 1 0 0 ]'
+{Error using <a href="matlab:helpUtils.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Inner matrix dimensions must agree.
+} 
+A
+
+A =
+
+  Columns 1 through 3
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.7071 + 0.7071i   0.0000 + 1.0000i
+   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i  -0.7071 + 0.7071i   0.0000 - 1.0000i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i  -0.7071 - 0.7071i   0.0000 + 1.0000i
+   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.7071 - 0.7071i   0.0000 - 1.0000i
+
+  Columns 4 through 6
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+  -0.7071 + 0.7071i  -1.0000 + 0.0000i  -0.7071 - 0.7071i
+   0.0000 - 1.0000i   1.0000 + 0.0000i   0.0000 + 1.0000i
+   0.7071 + 0.7071i  -1.0000 + 0.0000i   0.7071 - 0.7071i
+  -1.0000 + 0.0000i   1.0000 + 0.0000i  -1.0000 + 0.0000i
+   0.7071 - 0.7071i  -1.0000 + 0.0000i   0.7071 + 0.7071i
+   0.0000 + 1.0000i   1.0000 + 0.0000i   0.0000 - 1.0000i
+  -0.7071 - 0.7071i  -1.0000 + 0.0000i  -0.7071 + 0.7071i
+
+  Columns 7 through 8
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i
+   0.0000 - 1.0000i   0.7071 - 0.7071i
+  -1.0000 + 0.0000i   0.0000 - 1.0000i
+   0.0000 + 1.0000i  -0.7071 - 0.7071i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i
+   0.0000 - 1.0000i  -0.7071 + 0.7071i
+  -1.0000 + 0.0000i   0.0000 + 1.0000i
+   0.0000 + 1.0000i   0.7071 + 0.7071i
+
+A=myfftmtx(4)
+
+A =
+
+  Columns 1 through 3
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i
+
+  Column 4
+
+   1.0000 + 0.0000i
+   0.0000 + 1.0000i
+  -1.0000 + 0.0000i
+   0.0000 - 1.0000i
+
+A(:,2)
+
+ans =
+
+   1.0000 + 0.0000i
+   0.0000 - 1.0000i
+  -1.0000 + 0.0000i
+   0.0000 + 1.0000i
+
+A*[ 0 1 0 0 ]'
+
+ans =
+
+   1.0000 + 0.0000i
+   0.0000 - 1.0000i
+  -1.0000 + 0.0000i
+   0.0000 + 1.0000i
+
+A*[ 0 1 0 0 ]'
+
+ans =
+
+   1.0000 + 0.0000i
+   0.0000 - 1.0000i
+  -1.0000 + 0.0000i
+   0.0000 + 1.0000i
+
+A*[0  0 1 0]'
+
+ans =
+
+     1
+    -1
+     1
+    -1
+
+fft([ 0 0 1 0])
+
+ans =
+
+     1    -1     1    -1
+
+A
+
+A =
+
+  Columns 1 through 3
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i
+
+  Column 4
+
+   1.0000 + 0.0000i
+   0.0000 + 1.0000i
+  -1.0000 + 0.0000i
+   0.0000 - 1.0000i
+
+inv(A)-A.
+ inv(A)-A.
+          |
+{Error: Expression or statement is incomplete or incorrect.
+} 
+inv(A)-A.'
+
+ans =
+
+  Columns 1 through 3
+
+  -0.7500 + 0.0000i  -0.7500 + 0.0000i  -0.7500 + 0.0000i
+  -0.7500 + 0.0000i   0.0000 + 1.2500i   0.7500 + 0.0000i
+  -0.7500 + 0.0000i   0.7500 + 0.0000i  -0.7500 + 0.0000i
+  -0.7500 + 0.0000i   0.0000 - 1.2500i   0.7500 + 0.0000i
+
+  Column 4
+
+  -0.7500 + 0.0000i
+   0.0000 - 1.2500i
+   0.7500 + 0.0000i
+   0.0000 + 1.2500i
+
+A
+
+A =
+
+  Columns 1 through 3
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i
+
+  Column 4
+
+   1.0000 + 0.0000i
+   0.0000 + 1.0000i
+  -1.0000 + 0.0000i
+   0.0000 - 1.0000i
+
+[V,D]=eig(A)
+
+V =
+
+  Columns 1 through 3
+
+   0.8660 + 0.0000i  -0.5000 + 0.0000i  -0.0000 + 0.0000i
+   0.2887 + 0.0000i   0.5000 + 0.0000i  -0.7071 - 0.0000i
+   0.2887 + 0.0000i   0.5000 + 0.0000i  -0.0000 + 0.0000i
+   0.2887 + 0.0000i   0.5000 + 0.0000i   0.7071 + 0.0000i
+
+  Column 4
+
+  -0.0503 - 0.0045i
+  -0.4243 - 0.0023i
+   0.7983 + 0.0000i
+  -0.4243 - 0.0023i
+
+
+D =
+
+  Columns 1 through 3
+
+   2.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i  -2.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i  -0.0000 - 2.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+
+  Column 4
+
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   2.0000 + 0.0000i
+
+diag(D)
+
+ans =
+
+   2.0000 + 0.0000i
+  -2.0000 + 0.0000i
+  -0.0000 - 2.0000i
+   2.0000 + 0.0000i
+
+D
+
+D =
+
+  Columns 1 through 3
+
+   2.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i  -2.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i  -0.0000 - 2.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+
+  Column 4
+
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   2.0000 + 0.0000i
+
+eig( myfftmtx(2))
+
+ans =
+
+   -1.4142
+    1.4142
+
+eig( myfftmtx(3))
+
+ans =
+
+   1.7321 - 0.0000i
+  -1.7321 - 0.0000i
+   0.0000 - 1.7321i
+
+eig( myfftmtx(4))
+
+ans =
+
+   2.0000 + 0.0000i
+  -2.0000 + 0.0000i
+  -0.0000 - 2.0000i
+   2.0000 + 0.0000i
+
+eig( myfftmtx(5))
+
+ans =
+
+   2.2361 + 0.0000i
+  -2.2361 + 0.0000i
+   0.0000 - 2.2361i
+  -0.0000 + 2.2361i
+   2.2361 + 0.0000i
+
+eig( myfftmtx(9))
+
+ans =
+
+   3.0000 + 0.0000i
+  -3.0000 + 0.0000i
+   0.0000 - 3.0000i
+  -3.0000 - 0.0000i
+   3.0000 + 0.0000i
+  -0.0000 + 3.0000i
+   0.0000 + 3.0000i
+   3.0000 + 0.0000i
+   0.0000 - 3.0000i
+
+eig( myfftmtx(8))
+
+ans =
+
+   2.8284 - 0.0000i
+  -2.8284 - 0.0000i
+  -0.0000 - 2.8284i
+   2.8284 - 0.0000i
+  -0.0000 + 2.8284i
+  -2.8284 + 0.0000i
+   0.0000 - 2.8284i
+   2.8284 + 0.0000i
+
+eig( myfftmtx(6))
+
+ans =
+
+   2.4495 - 0.0000i
+  -2.4495 - 0.0000i
+   0.0000 - 2.4495i
+  -2.4495 + 0.0000i
+   0.0000 + 2.4495i
+   2.4495 + 0.0000i
+
+eig( myfftmtx(16))
+
+ans =
+
+   4.0000 - 0.0000i
+   0.0000 - 4.0000i
+   0.0000 + 4.0000i
+   4.0000 - 0.0000i
+   4.0000 + 0.0000i
+  -0.0000 + 4.0000i
+  -0.0000 - 4.0000i
+   0.0000 - 4.0000i
+   4.0000 - 0.0000i
+   0.0000 + 4.0000i
+  -4.0000 + 0.0000i
+  -4.0000 - 0.0000i
+  -4.0000 + 0.0000i
+  -4.0000 + 0.0000i
+   4.0000 + 0.0000i
+   0.0000 - 4.0000i
+
+
+[V,D]=eig( myfftmtx(16))
+
+V =
+
+  Columns 1 through 3
+
+   0.7906 + 0.0000i   0.0000 + 0.0000i  -0.0000 + 0.0000i
+   0.1581 + 0.0000i  -0.2398 + 0.1506i   0.3794 + 0.0479i
+   0.1581 - 0.0000i  -0.5163 - 0.0000i  -0.0333 - 0.0429i
+   0.1581 - 0.0000i  -0.2725 + 0.0404i  -0.4064 + 0.0040i
+   0.1581 - 0.0000i   0.0898 + 0.0823i  -0.4136 + 0.0000i
+   0.1581 + 0.0000i   0.0424 + 0.0720i  -0.0398 - 0.0566i
+   0.1581 + 0.0000i   0.1980 + 0.0717i  -0.0333 - 0.0429i
+   0.1581 - 0.0000i  -0.1045 + 0.0176i  -0.0813 - 0.0127i
+   0.1581 - 0.0000i   0.0000 + 0.0000i  -0.0000 + 0.0000i
+   0.1581 + 0.0000i   0.1045 - 0.0176i   0.0813 + 0.0127i
+   0.1581 - 0.0000i  -0.1980 - 0.0717i   0.0333 + 0.0429i
+   0.1581 - 0.0000i  -0.0424 - 0.0720i   0.0398 + 0.0566i
+   0.1581 + 0.0000i  -0.0898 - 0.0823i   0.4136 + 0.0000i
+   0.1581 + 0.0000i   0.2725 - 0.0404i   0.4064 - 0.0040i
+   0.1581 + 0.0000i   0.5163 + 0.0000i   0.0333 + 0.0429i
+   0.1581 - 0.0000i   0.2398 - 0.1506i  -0.3794 - 0.0479i
+
+  Columns 4 through 6
+
+  -0.0369 - 0.0024i  -0.0217 - 0.0353i  -0.0000 - 0.0000i
+   0.4527 + 0.0000i  -0.1800 + 0.0066i   0.1713 - 0.0911i
+   0.2938 - 0.0121i   0.2442 + 0.0059i  -0.3207 + 0.0730i
+  -0.1247 - 0.0026i  -0.2487 - 0.0775i   0.3243 + 0.0104i
+  -0.1236 + 0.0275i   0.0111 + 0.1398i  -0.0590 - 0.0122i
+  -0.1984 + 0.0009i  -0.2212 - 0.0599i  -0.0702 + 0.1259i
+  -0.3131 - 0.0258i   0.0690 - 0.1634i  -0.3207 + 0.0730i
+   0.0824 + 0.0177i  -0.0421 + 0.0954i  -0.3411 + 0.0000i
+  -0.2490 - 0.0184i   0.6703 + 0.0000i   0.0000 + 0.0000i
+   0.0824 + 0.0177i  -0.0421 + 0.0954i   0.3411 + 0.0000i
+  -0.3131 - 0.0258i   0.0690 - 0.1634i   0.3207 - 0.0730i
+  -0.1984 + 0.0009i  -0.2212 - 0.0599i   0.0702 - 0.1259i
+  -0.1236 + 0.0275i   0.0111 + 0.1398i   0.0590 + 0.0122i
+  -0.1247 - 0.0026i  -0.2487 - 0.0775i  -0.3243 - 0.0104i
+   0.2938 - 0.0121i   0.2442 + 0.0059i   0.3207 - 0.0730i
+   0.4527 + 0.0000i  -0.1800 + 0.0066i  -0.1713 + 0.0911i
+
+  Columns 7 through 9
+
+   0.0000 - 0.0000i   0.0000 + 0.0000i   0.1936 - 0.0215i
+  -0.0185 + 0.0018i   0.1664 + 0.0182i  -0.1836 - 0.0186i
+  -0.0144 + 0.1906i  -0.2364 + 0.1454i   0.0443 + 0.0703i
+  -0.2517 - 0.1260i   0.0272 + 0.0570i  -0.0485 - 0.0318i
+   0.2341 + 0.1793i   0.0383 - 0.0419i   0.1211 - 0.0936i
+   0.2484 - 0.0814i   0.3792 - 0.0449i   0.1022 - 0.0281i
+  -0.3619 + 0.0000i  -0.2073 - 0.0605i  -0.1939 + 0.0411i
+   0.0135 - 0.3122i   0.4419 + 0.0000i   0.5742 + 0.0000i
+   0.0000 - 0.0000i  -0.0000 - 0.0000i  -0.2507 + 0.0571i
+  -0.0135 + 0.3122i  -0.4419 + 0.0000i   0.5742 + 0.0000i
+   0.3619 + 0.0000i   0.2073 + 0.0605i  -0.1939 + 0.0411i
+  -0.2484 + 0.0814i  -0.3792 + 0.0449i   0.1022 - 0.0281i
+  -0.2341 - 0.1793i  -0.0383 + 0.0419i   0.1211 - 0.0936i
+   0.2517 + 0.1260i  -0.0272 - 0.0570i  -0.0485 - 0.0318i
+   0.0144 - 0.1906i   0.2364 - 0.1454i   0.0443 + 0.0703i
+   0.0185 - 0.0018i  -0.1664 - 0.0182i  -0.1836 - 0.0186i
+
+  Columns 10 through 12
+
+   0.0000 - 0.0000i   0.6119 + 0.0000i  -0.0178 + 0.0252i
+   0.1638 + 0.0380i  -0.1950 - 0.0004i   0.1188 - 0.1154i
+  -0.0877 + 0.0245i  -0.2186 + 0.0002i  -0.0637 + 0.1314i
+  -0.1521 - 0.0872i  -0.2074 + 0.0016i  -0.3470 + 0.1279i
+   0.2490 - 0.0525i  -0.2052 - 0.0002i  -0.0922 + 0.0135i
+  -0.5252 + 0.0000i  -0.2184 - 0.0008i   0.4975 + 0.0000i
+  -0.0877 + 0.0245i  -0.1917 - 0.0006i  -0.1208 - 0.1043i
+   0.2888 + 0.0202i  -0.1928 + 0.0000i  -0.0491 - 0.0900i
+   0.0000 - 0.0000i  -0.2016 + 0.0004i   0.2023 - 0.0523i
+  -0.2888 - 0.0202i  -0.1928 + 0.0000i  -0.0491 - 0.0900i
+   0.0877 - 0.0245i  -0.1917 - 0.0006i  -0.1208 - 0.1043i
+   0.5252 + 0.0000i  -0.2184 - 0.0008i   0.4975 + 0.0000i
+  -0.2490 + 0.0525i  -0.2052 - 0.0002i  -0.0922 + 0.0135i
+   0.1521 + 0.0872i  -0.2074 + 0.0016i  -0.3470 + 0.1279i
+   0.0877 - 0.0245i  -0.2186 + 0.0002i  -0.0637 + 0.1314i
+  -0.1638 - 0.0380i  -0.1950 - 0.0004i   0.1188 - 0.1154i
+
+  Columns 13 through 15
+
+  -0.0297 - 0.0113i   0.0350 + 0.0115i  -0.0135 + 0.0067i
+   0.1301 - 0.1461i   0.0145 - 0.0363i  -0.0916 + 0.2105i
+  -0.1255 + 0.2290i  -0.1433 + 0.0425i  -0.3298 + 0.1396i
+  -0.2293 + 0.0971i   0.2750 + 0.0275i   0.0495 - 0.0724i
+   0.1344 + 0.1145i  -0.2738 - 0.0058i   0.4877 + 0.0000i
+  -0.2428 - 0.0384i   0.1484 + 0.0351i   0.0554 - 0.1366i
+   0.3942 + 0.0000i  -0.4044 - 0.0541i  -0.1468 - 0.0776i
+   0.1327 - 0.1191i   0.0397 - 0.0378i  -0.0623 - 0.1123i
+  -0.2390 - 0.2177i   0.5126 + 0.0000i   0.0356 + 0.1174i
+   0.1327 - 0.1191i   0.0397 - 0.0378i  -0.0623 - 0.1123i
+   0.3942 + 0.0000i  -0.4044 - 0.0541i  -0.1468 - 0.0776i
+  -0.2428 - 0.0384i   0.1484 + 0.0351i   0.0554 - 0.1366i
+   0.1344 + 0.1145i  -0.2738 - 0.0058i   0.4877 - 0.0000i
+  -0.2293 + 0.0971i   0.2750 + 0.0275i   0.0495 - 0.0724i
+  -0.1255 + 0.2290i  -0.1433 + 0.0425i  -0.3298 + 0.1396i
+   0.1301 - 0.1461i   0.0145 - 0.0363i  -0.0916 + 0.2105i
+
+  Column 16
+
+  -0.0000 + 0.0000i
+   0.3383 + 0.0844i
+  -0.1744 - 0.1025i
+   0.2148 - 0.1075i
+   0.0534 + 0.1821i
+   0.0676 + 0.1471i
+   0.4581 + 0.0000i
+   0.0844 - 0.0252i
+   0.0000 + 0.0000i
+  -0.0844 + 0.0252i
+  -0.4581 - 0.0000i
+  -0.0676 - 0.1471i
+  -0.0534 - 0.1821i
+  -0.2148 + 0.1075i
+   0.1744 + 0.1025i
+  -0.3383 - 0.0844i
+
+
+D =
+
+  Columns 1 through 3
+
+   4.0000 - 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 - 4.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 4.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+
+  Columns 4 through 6
+
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   4.0000 - 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   4.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i  -0.0000 + 4.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+
+  Columns 7 through 9
+
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+  -0.0000 - 4.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 - 4.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   4.0000 - 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+
+  Columns 10 through 12
+
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 4.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i  -4.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i  -4.0000 - 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+
+  Columns 13 through 15
+
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+  -4.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i  -4.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   4.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+
+  Column 16
+
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 - 4.0000i
+
+seigv(A)
+
+ans =
+
+  Columns 1 through 3
+
+  -0.5000 + 0.0000i  -0.0000 + 0.0000i  -0.0503 - 0.0045i
+   0.5000 + 0.0000i  -0.7071 - 0.0000i  -0.4243 - 0.0023i
+   0.5000 + 0.0000i  -0.0000 + 0.0000i   0.7983 + 0.0000i
+   0.5000 + 0.0000i   0.7071 + 0.0000i  -0.4243 - 0.0023i
+
+  Column 4
+
+   0.8660 + 0.0000i
+   0.2887 + 0.0000i
+   0.2887 + 0.0000i
+   0.2887 + 0.0000i
+
+m-seigv(A)
+{Error using <a href="matlab:helpUtils.errorDocCallback('minus')" style="font-weight:bold"> - </a>
+Matrix dimensions must agree.
+} 
+m=seigv(A)
+
+m =
+
+  Columns 1 through 3
+
+  -0.5000 + 0.0000i  -0.0000 + 0.0000i  -0.0503 - 0.0045i
+   0.5000 + 0.0000i  -0.7071 - 0.0000i  -0.4243 - 0.0023i
+   0.5000 + 0.0000i  -0.0000 + 0.0000i   0.7983 + 0.0000i
+   0.5000 + 0.0000i   0.7071 + 0.0000i  -0.4243 - 0.0023i
+
+  Column 4
+
+   0.8660 + 0.0000i
+   0.2887 + 0.0000i
+   0.2887 + 0.0000i
+   0.2887 + 0.0000i
+
+inv(m)*A*m
+
+ans =
+
+  Columns 1 through 3
+
+  -2.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 - 0.0000i
+  -0.0000 + 0.0000i  -0.0000 - 2.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i  -0.0000 - 0.0000i   2.0000 - 0.0000i
+   0.0000 + 0.0000i  -0.0000 + 0.0000i  -0.0000 - 0.0000i
+
+  Column 4
+
+   0.0000 + 0.0000i
+  -0.0000 + 0.0000i
+  -0.0000 + 0.0000i
+   2.0000 + 0.0000i
+
+inv(m)*A*m
+
+ans =
+
+  -2.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 - 0.0000i   0.0000 + 0.0000i
+  -0.0000 + 0.0000i  -0.0000 - 2.0000i   0.0000 + 0.0000i  -0.0000 + 0.0000i
+   0.0000 + 0.0000i  -0.0000 - 0.0000i   2.0000 - 0.0000i  -0.0000 + 0.0000i
+   0.0000 + 0.0000i  -0.0000 + 0.0000i  -0.0000 - 0.0000i   2.0000 + 0.0000i
+
+A
+
+A =
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i   0.0000 + 1.0000i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i   0.0000 - 1.0000i
+
+A(:,2)
+
+ans =
+
+   1.0000 + 0.0000i
+   0.0000 - 1.0000i
+  -1.0000 + 0.0000i
+   0.0000 + 1.0000i
+
+ifft( A(:,2))
+
+ans =
+
+     0
+     1
+     0
+     0
+
+ifft( A(:,3))
+
+ans =
+
+     0
+     0
+     1
+     0
+
+ifft( A.')
+
+ans =
+
+     1     0     0     0
+     0     1     0     0
+     0     0     1     0
+     0     0     0     1
+
+ifft( A)
+
+ans =
+
+     1     0     0     0
+     0     1     0     0
+     0     0     1     0
+     0     0     0     1
+
+fft(A)
+
+ans =
+
+     4     0     0     0
+     0     0     0     4
+     0     0     4     0
+     0     4     0     0
+
+fft(A)
+
+ans =
+
+     4     0     0     0
+     0     0     0     4
+     0     0     4     0
+     0     4     0     0
+
+fft(fft(A))
+
+ans =
+
+   4.0000 + 0.0000i   4.0000 + 0.0000i   4.0000 + 0.0000i   4.0000 + 0.0000i
+   4.0000 + 0.0000i   0.0000 + 4.0000i  -4.0000 + 0.0000i   0.0000 - 4.0000i
+   4.0000 + 0.0000i  -4.0000 + 0.0000i   4.0000 + 0.0000i  -4.0000 + 0.0000i
+   4.0000 + 0.0000i   0.0000 - 4.0000i  -4.0000 + 0.0000i   0.0000 + 4.0000i
+
+fft(fft(A))/4
+
+ans =
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i   0.0000 - 1.0000i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i   0.0000 + 1.0000i
+
+clc
+A
+
+A =
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i   0.0000 + 1.0000i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i   0.0000 - 1.0000i
+
+A=myfftmtx(2)
+
+A =
+
+     1     1
+     1    -1
+
+clc
+A=myfftmtx(2)
+
+A =
+
+     1     1
+     1    -1
+
+
+m=seigv(A)
+
+m =
+
+    0.3827   -0.9239
+   -0.9239   -0.3827
+
+eig(A)
+
+ans =
+
+   -1.4142
+    1.4142
+
+seig(A)
+
+ans =
+
+   -1.4142
+    1.4142
+
+v
+
+v =
+
+     1     2     3
+
+d
+{Undefined function or variable 'd'.
+} 
+edit seigv
+[m,vals]=seigv(A)
+
+m =
+
+    0.3827   -0.9239
+   -0.9239   -0.3827
+
+
+vals =
+
+   -1.4142
+    1.4142
+
+A=myfftmtx(3)
+
+A =
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i  -0.5000 - 0.8660i  -0.5000 + 0.8660i
+   1.0000 + 0.0000i  -0.5000 + 0.8660i  -0.5000 - 0.8660i
+
+A=myfftmtx(4)
+
+A =
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i   0.0000 + 1.0000i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i   0.0000 - 1.0000i
+
+[m,vals]=seigv(A)
+
+m =
+
+  -0.5000 + 0.0000i  -0.0000 + 0.0000i  -0.0503 - 0.0045i   0.8660 + 0.0000i
+   0.5000 + 0.0000i  -0.7071 - 0.0000i  -0.4243 - 0.0023i   0.2887 + 0.0000i
+   0.5000 + 0.0000i  -0.0000 + 0.0000i   0.7983 + 0.0000i   0.2887 + 0.0000i
+   0.5000 + 0.0000i   0.7071 + 0.0000i  -0.4243 - 0.0023i   0.2887 + 0.0000i
+
+
+vals =
+
+  -2.0000 + 0.0000i
+  -0.0000 - 2.0000i
+   2.0000 + 0.0000i
+   2.0000 + 0.0000i
+
+inv(m)*A*m
+
+ans =
+
+  -2.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 - 0.0000i   0.0000 + 0.0000i
+  -0.0000 + 0.0000i  -0.0000 - 2.0000i   0.0000 + 0.0000i  -0.0000 + 0.0000i
+   0.0000 + 0.0000i  -0.0000 - 0.0000i   2.0000 - 0.0000i  -0.0000 + 0.0000i
+   0.0000 + 0.0000i  -0.0000 + 0.0000i  -0.0000 - 0.0000i   2.0000 + 0.0000i
+
+vals
+
+vals =
+
+  -2.0000 + 0.0000i
+  -0.0000 - 2.0000i
+   2.0000 + 0.0000i
+   2.0000 + 0.0000i
+
+m
+
+m =
+
+  -0.5000 + 0.0000i  -0.0000 + 0.0000i  -0.0503 - 0.0045i   0.8660 + 0.0000i
+   0.5000 + 0.0000i  -0.7071 - 0.0000i  -0.4243 - 0.0023i   0.2887 + 0.0000i
+   0.5000 + 0.0000i  -0.0000 + 0.0000i   0.7983 + 0.0000i   0.2887 + 0.0000i
+   0.5000 + 0.0000i   0.7071 + 0.0000i  -0.4243 - 0.0023i   0.2887 + 0.0000i
+
+det(m)
+
+ans =
+
+   0.9983 + 0.0019i
+
+m
+
+m =
+
+  -0.5000 + 0.0000i  -0.0000 + 0.0000i  -0.0503 - 0.0045i   0.8660 + 0.0000i
+   0.5000 + 0.0000i  -0.7071 - 0.0000i  -0.4243 - 0.0023i   0.2887 + 0.0000i
+   0.5000 + 0.0000i  -0.0000 + 0.0000i   0.7983 + 0.0000i   0.2887 + 0.0000i
+   0.5000 + 0.0000i   0.7071 + 0.0000i  -0.4243 - 0.0023i   0.2887 + 0.0000i
+
+A
+
+A =
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i   0.0000 + 1.0000i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i   0.0000 - 1.0000i
+
+A*A'
+
+ans =
+
+     4     0     0     0
+     0     4     0     0
+     0     0     4     0
+     0     0     0     4
+
+A*A
+
+ans =
+
+     4     0     0     0
+     0     0     0     4
+     0     0     4     0
+     0     4     0     0
+
+A*A*A
+
+ans =
+
+   4.0000 + 0.0000i   4.0000 + 0.0000i   4.0000 + 0.0000i   4.0000 + 0.0000i
+   4.0000 + 0.0000i   0.0000 + 4.0000i  -4.0000 + 0.0000i   0.0000 - 4.0000i
+   4.0000 + 0.0000i  -4.0000 + 0.0000i   4.0000 + 0.0000i  -4.0000 + 0.0000i
+   4.0000 + 0.0000i   0.0000 - 4.0000i  -4.0000 + 0.0000i   0.0000 + 4.0000i
+
+A*A*A*A
+
+ans =
+
+    16     0     0     0
+     0    16     0     0
+     0     0    16     0
+     0     0     0    16
+
+A*A
+
+ans =
+
+     4     0     0     0
+     0     0     0     4
+     0     0     4     0
+     0     4     0     0
+
+A*A*A*A
+
+ans =
+
+    16     0     0     0
+     0    16     0     0
+     0     0    16     0
+     0     0     0    16
+
+A^(-2)
+
+ans =
+
+    0.2500         0         0         0
+         0         0         0    0.2500
+         0         0    0.2500         0
+         0    0.2500         0         0
+
+for(k=0:4)
+A^(-k)
+end
+
+ans =
+
+     1     0     0     0
+     0     1     0     0
+     0     0     1     0
+     0     0     0     1
+
+
+ans =
+
+   0.2500 + 0.0000i   0.2500 + 0.0000i   0.2500 + 0.0000i   0.2500 + 0.0000i
+   0.2500 + 0.0000i   0.0000 + 0.2500i  -0.2500 + 0.0000i   0.0000 - 0.2500i
+   0.2500 + 0.0000i  -0.2500 + 0.0000i   0.2500 + 0.0000i  -0.2500 + 0.0000i
+   0.2500 + 0.0000i   0.0000 - 0.2500i  -0.2500 + 0.0000i   0.0000 + 0.2500i
+
+
+ans =
+
+    0.2500         0         0         0
+         0         0         0    0.2500
+         0         0    0.2500         0
+         0    0.2500         0         0
+
+
+ans =
+
+   0.0625 + 0.0000i   0.0625 + 0.0000i   0.0625 + 0.0000i   0.0625 + 0.0000i
+   0.0625 + 0.0000i   0.0000 - 0.0625i  -0.0625 + 0.0000i   0.0000 + 0.0625i
+   0.0625 + 0.0000i  -0.0625 + 0.0000i   0.0625 + 0.0000i  -0.0625 + 0.0000i
+   0.0625 + 0.0000i   0.0000 + 0.0625i  -0.0625 + 0.0000i   0.0000 - 0.0625i
+
+
+ans =
+
+    0.0625         0         0         0
+         0    0.0625         0         0
+         0         0    0.0625         0
+         0         0         0    0.0625
+
+
+
+A=myfftmtx(8);
+A
+
+A =
+
+  Columns 1 through 7
+
+   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.7071 - 0.7071i   0.0000 - 1.0000i  -0.7071 - 0.7071i  -1.0000 + 0.0000i  -0.7071 + 0.7071i   0.0000 + 1.0000i
+   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i   0.0000 + 1.0000i   1.0000 + 0.0000i   0.0000 - 1.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i  -0.7071 - 0.7071i   0.0000 + 1.0000i   0.7071 - 0.7071i  -1.0000 + 0.0000i   0.7071 + 0.7071i   0.0000 - 1.0000i
+   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i  -1.0000 + 0.0000i   1.0000 + 0.0000i
+   1.0000 + 0.0000i  -0.7071 + 0.7071i   0.0000 - 1.0000i   0.7071 + 0.7071i  -1.0000 + 0.0000i   0.7071 - 0.7071i   0.0000 + 1.0000i
+   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i   0.0000 - 1.0000i   1.0000 + 0.0000i   0.0000 + 1.0000i  -1.0000 + 0.0000i
+   1.0000 + 0.0000i   0.7071 + 0.7071i   0.0000 + 1.0000i  -0.7071 + 0.7071i  -1.0000 + 0.0000i  -0.7071 - 0.7071i   0.0000 - 1.0000i
+
+  Column 8
+
+   1.0000 + 0.0000i
+   0.7071 + 0.7071i
+   0.0000 + 1.0000i
+  -0.7071 + 0.7071i
+  -1.0000 + 0.0000i
+  -0.7071 - 0.7071i
+   0.0000 - 1.0000i
+   0.7071 - 0.7071i
+
+[V,D]=eig(A)
+
+V =
+
+  Columns 1 through 7
+
+   0.8227 + 0.0000i   0.5685 + 0.0000i   0.0000 - 0.0000i  -0.0300 - 0.1998i  -0.0000 - 0.0000i  -0.0139 + 0.0710i   0.0000 - 0.0000i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i   0.6123 + 0.0000i   0.5339 + 0.0000i  -0.3536 - 0.0000i  -0.1589 - 0.0502i   0.4980 + 0.0000i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i   0.2957 - 0.0024i  -0.1121 - 0.0622i   0.5000 + 0.0000i   0.5762 + 0.0000i   0.4449 + 0.1109i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i   0.1941 + 0.0033i  -0.1936 - 0.0701i   0.3536 + 0.0000i  -0.1589 - 0.0502i  -0.1311 - 0.1568i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i   0.0000 - 0.0000i  -0.5112 - 0.1007i   0.0000 - 0.0000i  -0.4634 - 0.0710i   0.0000 - 0.0000i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i  -0.1941 - 0.0033i  -0.1936 - 0.0701i  -0.3536 + 0.0000i  -0.1589 - 0.0502i   0.1311 + 0.1568i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i  -0.2957 + 0.0024i  -0.1121 - 0.0622i  -0.5000 - 0.0000i   0.5762 + 0.0000i  -0.4449 - 0.1109i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i  -0.6123 + 0.0000i   0.5339 + 0.0000i   0.3536 + 0.0000i  -0.1589 - 0.0502i  -0.4980 + 0.0000i
+
+  Column 8
+
+  -0.0288 + 0.0340i
+   0.0653 - 0.1987i
+   0.1108 + 0.0070i
+  -0.4842 + 0.2227i
+   0.5637 + 0.0000i
+  -0.4842 + 0.2227i
+   0.1108 + 0.0070i
+   0.0653 - 0.1987i
+
+
+D =
+
+  Columns 1 through 7
+
+   2.8284 - 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i  -2.8284 - 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i  -0.0000 - 2.8284i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   2.8284 - 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i  -0.0000 + 2.8284i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i  -2.8284 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 - 2.8284i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+
+  Column 8
+
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   2.8284 + 0.0000i
+
+V
+
+V =
+
+  Columns 1 through 7
+
+   0.8227 + 0.0000i   0.5685 + 0.0000i   0.0000 - 0.0000i  -0.0300 - 0.1998i  -0.0000 - 0.0000i  -0.0139 + 0.0710i   0.0000 - 0.0000i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i   0.6123 + 0.0000i   0.5339 + 0.0000i  -0.3536 - 0.0000i  -0.1589 - 0.0502i   0.4980 + 0.0000i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i   0.2957 - 0.0024i  -0.1121 - 0.0622i   0.5000 + 0.0000i   0.5762 + 0.0000i   0.4449 + 0.1109i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i   0.1941 + 0.0033i  -0.1936 - 0.0701i   0.3536 + 0.0000i  -0.1589 - 0.0502i  -0.1311 - 0.1568i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i   0.0000 - 0.0000i  -0.5112 - 0.1007i   0.0000 - 0.0000i  -0.4634 - 0.0710i   0.0000 - 0.0000i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i  -0.1941 - 0.0033i  -0.1936 - 0.0701i  -0.3536 + 0.0000i  -0.1589 - 0.0502i   0.1311 + 0.1568i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i  -0.2957 + 0.0024i  -0.1121 - 0.0622i  -0.5000 - 0.0000i   0.5762 + 0.0000i  -0.4449 - 0.1109i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i  -0.6123 + 0.0000i   0.5339 + 0.0000i   0.3536 + 0.0000i  -0.1589 - 0.0502i  -0.4980 + 0.0000i
+
+  Column 8
+
+  -0.0288 + 0.0340i
+   0.0653 - 0.1987i
+   0.1108 + 0.0070i
+  -0.4842 + 0.2227i
+   0.5637 + 0.0000i
+  -0.4842 + 0.2227i
+   0.1108 + 0.0070i
+   0.0653 - 0.1987i
+
+diag(D)
+
+ans =
+
+   2.8284 - 0.0000i
+  -2.8284 - 0.0000i
+  -0.0000 - 2.8284i
+   2.8284 - 0.0000i
+  -0.0000 + 2.8284i
+  -2.8284 + 0.0000i
+   0.0000 - 2.8284i
+   2.8284 + 0.0000i
+
+[w0,ind0]=sort( abs(diag(D)))
+
+w0 =
+
+    2.8284
+    2.8284
+    2.8284
+    2.8284
+    2.8284
+    2.8284
+    2.8284
+    2.8284
+
+
+ind0 =
+
+     1
+     2
+     4
+     5
+     6
+     7
+     8
+     3
+
+
+W1=diag(D)
+
+W1 =
+
+   2.8284 - 0.0000i
+  -2.8284 - 0.0000i
+  -0.0000 - 2.8284i
+   2.8284 - 0.0000i
+  -0.0000 + 2.8284i
+  -2.8284 + 0.0000i
+   0.0000 - 2.8284i
+   2.8284 + 0.0000i
+
+W1(ind0)
+
+ans =
+
+   2.8284 - 0.0000i
+  -2.8284 - 0.0000i
+   2.8284 - 0.0000i
+  -0.0000 + 2.8284i
+  -2.8284 + 0.0000i
+   0.0000 - 2.8284i
+   2.8284 + 0.0000i
+  -0.0000 - 2.8284i
+
+D
+
+D =
+
+  Columns 1 through 7
+
+   2.8284 - 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i  -2.8284 - 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i  -0.0000 - 2.8284i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   2.8284 - 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i  -0.0000 + 2.8284i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i  -2.8284 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 - 2.8284i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+
+  Column 8
+
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   2.8284 + 0.0000i
+
+D(ind0,ind0)
+
+ans =
+
+  Columns 1 through 7
+
+   2.8284 - 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i  -2.8284 - 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   2.8284 - 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i  -0.0000 + 2.8284i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i  -2.8284 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 - 2.8284i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   2.8284 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+
+  Column 8
+
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+  -0.0000 - 2.8284i
+
+V(:,ind0)
+
+ans =
+
+  Columns 1 through 7
+
+   0.8227 + 0.0000i   0.5685 + 0.0000i  -0.0300 - 0.1998i  -0.0000 - 0.0000i  -0.0139 + 0.0710i   0.0000 - 0.0000i  -0.0288 + 0.0340i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i   0.5339 + 0.0000i  -0.3536 - 0.0000i  -0.1589 - 0.0502i   0.4980 + 0.0000i   0.0653 - 0.1987i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i  -0.1121 - 0.0622i   0.5000 + 0.0000i   0.5762 + 0.0000i   0.4449 + 0.1109i   0.1108 + 0.0070i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i  -0.1936 - 0.0701i   0.3536 + 0.0000i  -0.1589 - 0.0502i  -0.1311 - 0.1568i  -0.4842 + 0.2227i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i  -0.5112 - 0.1007i   0.0000 - 0.0000i  -0.4634 - 0.0710i   0.0000 - 0.0000i   0.5637 + 0.0000i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i  -0.1936 - 0.0701i  -0.3536 + 0.0000i  -0.1589 - 0.0502i   0.1311 + 0.1568i  -0.4842 + 0.2227i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i  -0.1121 - 0.0622i  -0.5000 - 0.0000i   0.5762 + 0.0000i  -0.4449 - 0.1109i   0.1108 + 0.0070i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i   0.5339 + 0.0000i   0.3536 + 0.0000i  -0.1589 - 0.0502i  -0.4980 + 0.0000i   0.0653 - 0.1987i
+
+  Column 8
+
+   0.0000 - 0.0000i
+   0.6123 + 0.0000i
+   0.2957 - 0.0024i
+   0.1941 + 0.0033i
+   0.0000 - 0.0000i
+  -0.1941 - 0.0033i
+  -0.2957 + 0.0024i
+  -0.6123 + 0.0000i
+
+diag(D)
+
+ans =
+
+   2.8284 - 0.0000i
+  -2.8284 - 0.0000i
+  -0.0000 - 2.8284i
+   2.8284 - 0.0000i
+  -0.0000 + 2.8284i
+  -2.8284 + 0.0000i
+   0.0000 - 2.8284i
+   2.8284 + 0.0000i
+
+ans(ind0)
+
+ans =
+
+   2.8284 - 0.0000i
+  -2.8284 - 0.0000i
+   2.8284 - 0.0000i
+  -0.0000 + 2.8284i
+  -2.8284 + 0.0000i
+   0.0000 - 2.8284i
+   2.8284 + 0.0000i
+  -0.0000 - 2.8284i
+
+abs(ans)
+
+ans =
+
+    2.8284
+    2.8284
+    2.8284
+    2.8284
+    2.8284
+    2.8284
+    2.8284
+    2.8284
+
+V
+
+V =
+
+  Columns 1 through 7
+
+   0.8227 + 0.0000i   0.5685 + 0.0000i   0.0000 - 0.0000i  -0.0300 - 0.1998i  -0.0000 - 0.0000i  -0.0139 + 0.0710i   0.0000 - 0.0000i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i   0.6123 + 0.0000i   0.5339 + 0.0000i  -0.3536 - 0.0000i  -0.1589 - 0.0502i   0.4980 + 0.0000i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i   0.2957 - 0.0024i  -0.1121 - 0.0622i   0.5000 + 0.0000i   0.5762 + 0.0000i   0.4449 + 0.1109i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i   0.1941 + 0.0033i  -0.1936 - 0.0701i   0.3536 + 0.0000i  -0.1589 - 0.0502i  -0.1311 - 0.1568i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i   0.0000 - 0.0000i  -0.5112 - 0.1007i   0.0000 - 0.0000i  -0.4634 - 0.0710i   0.0000 - 0.0000i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i  -0.1941 - 0.0033i  -0.1936 - 0.0701i  -0.3536 + 0.0000i  -0.1589 - 0.0502i   0.1311 + 0.1568i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i  -0.2957 + 0.0024i  -0.1121 - 0.0622i  -0.5000 - 0.0000i   0.5762 + 0.0000i  -0.4449 - 0.1109i
+   0.2149 - 0.0000i  -0.3109 - 0.0000i  -0.6123 + 0.0000i   0.5339 + 0.0000i   0.3536 + 0.0000i  -0.1589 - 0.0502i  -0.4980 + 0.0000i
+
+  Column 8
+
+  -0.0288 + 0.0340i
+   0.0653 - 0.1987i
+   0.1108 + 0.0070i
+  -0.4842 + 0.2227i
+   0.5637 + 0.0000i
+  -0.4842 + 0.2227i
+   0.1108 + 0.0070i
+   0.0653 - 0.1987i
+
+arg(diag(D))
+{Undefined function 'arg' for input arguments of type 'double'.
+} 
+
+phase(diag(D))
+
+ans =
+
+   -0.0000
+   -3.1416
+   -1.5708
+   -0.0000
+    1.5708
+    3.1416
+    4.7124
+    6.2832
+
+[temp,i0]=sort( phase(D))
+{Error using <a href="matlab:helpUtils.errorDocCallback('phase', 'C:\Program Files\MATLAB\R2014a\toolbox\ident\idobsolete\phase.m', 16)" style="font-weight:bold">phase</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2014a\toolbox\ident\idobsolete\phase.m',16,0)">line 16</a>)
+PHASE applies only to row or column vectors.
+For matrices you have to decide along which dimension the
+phase should be continuous.
+} 
+[temp,i0]=sort( phase(diag(D)))
+
+temp =
+
+   -3.1416
+   -1.5708
+   -0.0000
+   -0.0000
+    1.5708
+    3.1416
+    4.7124
+    6.2832
+
+
+i0 =
+
+     2
+     3
+     4
+     1
+     5
+     6
+     7
+     8
+
+w=diag(D)
+
+w =
+
+   2.8284 - 0.0000i
+  -2.8284 - 0.0000i
+  -0.0000 - 2.8284i
+   2.8284 - 0.0000i
+  -0.0000 + 2.8284i
+  -2.8284 + 0.0000i
+   0.0000 - 2.8284i
+   2.8284 + 0.0000i
+
+w(i0)
+
+ans =
+
+  -2.8284 - 0.0000i
+  -0.0000 - 2.8284i
+   2.8284 - 0.0000i
+   2.8284 - 0.0000i
+  -0.0000 + 2.8284i
+  -2.8284 + 0.0000i
+   0.0000 - 2.8284i
+   2.8284 + 0.0000i
+
+plot( w(i0))
+plot( w(i0))
+phase(w(i0))
+
+ans =
+
+   -3.1416
+   -1.5708
+   -0.0000
+   -0.0000
+    1.5708
+    3.1416
+    4.7124
+    6.2832
+
+mod(ans,2*pi)
+
+ans =
+
+    3.1416
+    4.7124
+    6.2832
+    6.2832
+    1.5708
+    3.1416
+    4.7124
+         0
+
+[trash0,ind]=sort( mod( phase( diag(D)),2*pi))
+
+trash0 =
+
+         0
+    1.5708
+    3.1416
+    3.1416
+    4.7124
+    4.7124
+    6.2832
+    6.2832
+
+
+ind =
+
+     8
+     5
+     2
+     6
+     3
+     7
+     1
+     4
+
+w-diag(D);
+w(ind)
+
+ans =
+
+   2.8284 + 0.0000i
+  -0.0000 + 2.8284i
+  -2.8284 - 0.0000i
+  -2.8284 + 0.0000i
+  -0.0000 - 2.8284i
+   0.0000 - 2.8284i
+   2.8284 - 0.0000i
+   2.8284 - 0.0000i
+
+plot(ans)
+mod( phase(w),2*pi)
+
+ans =
+
+    6.2832
+    3.1416
+    4.7124
+    6.2832
+    1.5708
+    3.1416
+    4.7124
+         0
+
+flipud( ind)
+
+ans =
+
+     4
+     1
+     7
+     3
+     6
+     2
+     5
+     8
+
+w(flipud( ind) )
+
+ans =
+
+   2.8284 - 0.0000i
+   2.8284 - 0.0000i
+   0.0000 - 2.8284i
+  -0.0000 - 2.8284i
+  -2.8284 + 0.0000i
+  -2.8284 - 0.0000i
+  -0.0000 + 2.8284i
+   2.8284 + 0.0000i
+
+plot(ans)
+clc
+clear
+clc
+edit mydctmtx
+mydctmtx(4)
+
+ans =
+
+    0.5000    0.5000    0.5000    0.5000
+    0.6533    0.2706   -0.2706   -0.6533
+    0.5000   -0.5000   -0.5000    0.5000
+    0.2706   -0.6533    0.6533   -0.2706
+
+[v,d]=seigv(mydctmtx(4))
+
+v =
+
+  -0.2058 + 0.2854i  -0.2058 - 0.2854i  -0.6134 + 0.0000i  -0.6134 + 0.0000i
+   0.1586 - 0.3957i   0.1586 + 0.3957i  -0.2373 + 0.5118i  -0.2373 - 0.5118i
+   0.6134 + 0.0000i   0.6134 + 0.0000i  -0.2058 - 0.2854i  -0.2058 + 0.2854i
+  -0.2373 - 0.5118i  -0.2373 + 0.5118i  -0.1586 - 0.3957i  -0.1586 + 0.3957i
+
+
+d =
+
+  -0.9904 + 0.1379i
+  -0.9904 - 0.1379i
+   0.9904 + 0.1379i
+   0.9904 - 0.1379i
+
+v
+
+v =
+
+  -0.2058 + 0.2854i  -0.2058 - 0.2854i  -0.6134 + 0.0000i  -0.6134 + 0.0000i
+   0.1586 - 0.3957i   0.1586 + 0.3957i  -0.2373 + 0.5118i  -0.2373 - 0.5118i
+   0.6134 + 0.0000i   0.6134 + 0.0000i  -0.2058 - 0.2854i  -0.2058 + 0.2854i
+  -0.2373 - 0.5118i  -0.2373 + 0.5118i  -0.1586 - 0.3957i  -0.1586 + 0.3957i
+
+A=mydctmtx(4)
+
+A =
+
+    0.5000    0.5000    0.5000    0.5000
+    0.6533    0.2706   -0.2706   -0.6533
+    0.5000   -0.5000   -0.5000    0.5000
+    0.2706   -0.6533    0.6533   -0.2706
+
+A*v
+
+ans =
+
+   0.1644 - 0.3111i   0.1644 + 0.3111i  -0.6075 - 0.0846i  -0.6075 + 0.0846i
+  -0.1025 + 0.4138i  -0.1025 - 0.4138i  -0.3056 + 0.4742i  -0.3056 - 0.4742i
+  -0.6075 + 0.0846i  -0.6075 - 0.0846i  -0.1644 - 0.3111i  -0.1644 + 0.3111i
+   0.3056 + 0.4742i   0.3056 - 0.4742i  -0.1025 - 0.4138i  -0.1025 + 0.4138i
+
+A*v-v*d
+{Error using <a href="matlab:helpUtils.errorDocCallback('minus')" style="font-weight:bold"> - </a>
+Matrix dimensions must agree.
+} 
+[v,d]=seigv(mydctmtx(4))
+
+v =
+
+  -0.2058 + 0.2854i  -0.2058 - 0.2854i  -0.6134 + 0.0000i  -0.6134 + 0.0000i
+   0.1586 - 0.3957i   0.1586 + 0.3957i  -0.2373 + 0.5118i  -0.2373 - 0.5118i
+   0.6134 + 0.0000i   0.6134 + 0.0000i  -0.2058 - 0.2854i  -0.2058 + 0.2854i
+  -0.2373 - 0.5118i  -0.2373 + 0.5118i  -0.1586 - 0.3957i  -0.1586 + 0.3957i
+
+
+d =
+
+  -0.9904 + 0.1379i
+  -0.9904 - 0.1379i
+   0.9904 + 0.1379i
+   0.9904 - 0.1379i
+
+[evals,m]=seigv(A)
+
+evals =
+
+  -0.2058 + 0.2854i  -0.2058 - 0.2854i  -0.6134 + 0.0000i  -0.6134 + 0.0000i
+   0.1586 - 0.3957i   0.1586 + 0.3957i  -0.2373 + 0.5118i  -0.2373 - 0.5118i
+   0.6134 + 0.0000i   0.6134 + 0.0000i  -0.2058 - 0.2854i  -0.2058 + 0.2854i
+  -0.2373 - 0.5118i  -0.2373 + 0.5118i  -0.1586 - 0.3957i  -0.1586 + 0.3957i
+
+
+m =
+
+  -0.9904 + 0.1379i
+  -0.9904 - 0.1379i
+   0.9904 + 0.1379i
+   0.9904 - 0.1379i
+
+diag(evals)
+
+ans =
+
+  -0.2058 + 0.2854i
+   0.1586 + 0.3957i
+  -0.2058 - 0.2854i
+  -0.1586 + 0.3957i
+
+evals
+
+evals =
+
+  -0.2058 + 0.2854i  -0.2058 - 0.2854i  -0.6134 + 0.0000i  -0.6134 + 0.0000i
+   0.1586 - 0.3957i   0.1586 + 0.3957i  -0.2373 + 0.5118i  -0.2373 - 0.5118i
+   0.6134 + 0.0000i   0.6134 + 0.0000i  -0.2058 - 0.2854i  -0.2058 + 0.2854i
+  -0.2373 - 0.5118i  -0.2373 + 0.5118i  -0.1586 - 0.3957i  -0.1586 + 0.3957i
+
+[m,evals]=seigv(A)
+
+m =
+
+  -0.2058 + 0.2854i  -0.2058 - 0.2854i  -0.6134 + 0.0000i  -0.6134 + 0.0000i
+   0.1586 - 0.3957i   0.1586 + 0.3957i  -0.2373 + 0.5118i  -0.2373 - 0.5118i
+   0.6134 + 0.0000i   0.6134 + 0.0000i  -0.2058 - 0.2854i  -0.2058 + 0.2854i
+  -0.2373 - 0.5118i  -0.2373 + 0.5118i  -0.1586 - 0.3957i  -0.1586 + 0.3957i
+
+
+evals =
+
+  -0.9904 + 0.1379i
+  -0.9904 - 0.1379i
+   0.9904 + 0.1379i
+   0.9904 - 0.1379i
+
+diag(evals)
+
+ans =
+
+  -0.9904 + 0.1379i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i  -0.9904 - 0.1379i   0.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.9904 + 0.1379i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.0000 + 0.0000i   0.9904 - 0.1379i
+
+m*diag(evals)
+
+ans =
+
+   0.1644 - 0.3111i   0.1644 + 0.3111i  -0.6075 - 0.0846i  -0.6075 + 0.0846i
+  -0.1025 + 0.4138i  -0.1025 - 0.4138i  -0.3056 + 0.4742i  -0.3056 - 0.4742i
+  -0.6075 + 0.0846i  -0.6075 - 0.0846i  -0.1644 - 0.3111i  -0.1644 + 0.3111i
+   0.3056 + 0.4742i   0.3056 - 0.4742i  -0.1025 - 0.4138i  -0.1025 + 0.4138i
+
+A*m-m*diag(evals)
+
+ans =
+
+   1.0e-15 *
+
+  -0.1110 - 0.3331i  -0.1110 + 0.3886i   0.3331 + 0.1527i   0.3331 - 0.1527i
+   0.0278 + 0.4441i   0.0278 - 0.4441i   0.2776 - 0.2220i   0.2776 + 0.2776i
+  -0.2220 - 0.0694i  -0.2220 + 0.0694i   0.2776 - 0.0555i   0.2776 + 0.0555i
+   0.2776 + 0.5551i   0.2776 - 0.4996i   0.0555 + 0.0000i   0.0555 + 0.0000i
+
+abs(ans)
+
+ans =
+
+   1.0e-15 *
+
+    0.3511    0.4041    0.3664    0.3664
+    0.4450    0.4450    0.3554    0.3925
+    0.2326    0.2326    0.2831    0.2831
+    0.6206    0.5715    0.0555    0.0555
+
+ans*( abs(ans) < 1e-10)
+
+ans =
+
+   1.0e-14 *
+
+    0.1488    0.1488    0.1488    0.1488
+    0.1638    0.1638    0.1638    0.1638
+    0.1031    0.1031    0.1031    0.1031
+    0.1303    0.1303    0.1303    0.1303
+
+ans*( abs(ans) > 1e-10)
+
+ans =
+
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+
+res=A*m-m*diag(evals)
+
+res =
+
+   1.0e-15 *
+
+  -0.1110 - 0.3331i  -0.1110 + 0.3886i   0.3331 + 0.1527i   0.3331 - 0.1527i
+   0.0278 + 0.4441i   0.0278 - 0.4441i   0.2776 - 0.2220i   0.2776 + 0.2776i
+  -0.2220 - 0.0694i  -0.2220 + 0.0694i   0.2776 - 0.0555i   0.2776 + 0.0555i
+   0.2776 + 0.5551i   0.2776 - 0.4996i   0.0555 + 0.0000i   0.0555 + 0.0000i
+
+abs(res) > 1e-10
+
+ans =
+
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+
+res.*(abs(res) > 1e-10)
+
+ans =
+
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+
+
+
+res.*(abs(res) > 1e-10)
+
+ans =
+
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+
+m
+
+m =
+
+  -0.2058 + 0.2854i  -0.2058 - 0.2854i  -0.6134 + 0.0000i  -0.6134 + 0.0000i
+   0.1586 - 0.3957i   0.1586 + 0.3957i  -0.2373 + 0.5118i  -0.2373 - 0.5118i
+   0.6134 + 0.0000i   0.6134 + 0.0000i  -0.2058 - 0.2854i  -0.2058 + 0.2854i
+  -0.2373 - 0.5118i  -0.2373 + 0.5118i  -0.1586 - 0.3957i  -0.1586 + 0.3957i
+
+inv(m)*A*m
+
+ans =
+
+  -0.9904 + 0.1379i   0.0000 + 0.0000i   0.0000 + 0.0000i  -0.0000 + 0.0000i
+   0.0000 - 0.0000i  -0.9904 - 0.1379i  -0.0000 - 0.0000i   0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 + 0.0000i   0.9904 + 0.1379i  -0.0000 + 0.0000i
+   0.0000 + 0.0000i   0.0000 - 0.0000i  -0.0000 - 0.0000i   0.9904 - 0.1379i
+
+A=mydctmtx(8)
+
+A =
+
+    0.3536    0.3536    0.3536    0.3536    0.3536    0.3536    0.3536    0.3536
+    0.4904    0.4157    0.2778    0.0975   -0.0975   -0.2778   -0.4157   -0.4904
+    0.4619    0.1913   -0.1913   -0.4619   -0.4619   -0.1913    0.1913    0.4619
+    0.4157   -0.0975   -0.4904   -0.2778    0.2778    0.4904    0.0975   -0.4157
+    0.3536   -0.3536   -0.3536    0.3536    0.3536   -0.3536   -0.3536    0.3536
+    0.2778   -0.4904    0.0975    0.4157   -0.4157   -0.0975    0.4904   -0.2778
+    0.1913   -0.4619    0.4619   -0.1913   -0.1913    0.4619   -0.4619    0.1913
+    0.0975   -0.2778    0.4157   -0.4904    0.4904   -0.4157    0.2778   -0.0975
+
+eig(A)
+
+ans =
+
+   0.9592 + 0.2829i
+   0.9592 - 0.2829i
+   0.9965 + 0.0838i
+   0.9965 - 0.0838i
+  -0.9604 + 0.2785i
+  -0.9604 - 0.2785i
+  -0.9969 + 0.0792i
+  -0.9969 - 0.0792i
+
+plot( eig(A))
+plot( sort(eig(A)))
+       
+
+clear,clc
+A=mydctmtx(16);
+edit place
+exit
